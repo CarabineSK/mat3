@@ -3,4 +3,7 @@
 \contentsline {section}{\numberline {2}Zadanie}{3}
 \contentsline {section}{\numberline {3}Defin\IeC {\'\i }cie}{3}
 \contentsline {subsection}{\numberline {3.1}Pojem diferencia}{3}
+\contentsline {subsection}{\numberline {3.2}Pojem diferen\IeC {\v c}n\IeC {\'a} rovnica}{3}
+\contentsline {subsubsection}{\numberline {3.2.1}Typy diferen\IeC {\v c}n\IeC {\'y}ch rovn\IeC {\'\i }c}{3}
+\contentsline {paragraph}{\newline }{3}
 \contentsline {section}{\numberline {4}Vypracovanie}{3}
