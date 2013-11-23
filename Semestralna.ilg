@@ -1,0 +1,179 @@
+This is C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\makeindex.EXE, version 2.15 [MiKTeX 2.9] (kpathsea + Thai support).
+Scanning input file Semestralna...
+!! Input index error (file = Semestralna, line = 1):
+   -- Unknown index keyword \documentclass[a4paper,10pt].
+!! Input index error (file = Semestralna, line = 2):
+   -- Unknown index keyword \usepackage[slovak].
+!! Input index error (file = Semestralna, line = 3):
+   -- Unknown index keyword \usepackage[utf8].
+!! Input index error (file = Semestralna, line = 4):
+   -- Unknown index keyword \usepackage.
+!! Input index error (file = Semestralna, line = 5):
+   -- Unknown index keyword \usepackage.
+!! Input index error (file = Semestralna, line = 6):
+   -- Unknown index keyword \usepackage.
+!! Input index error (file = Semestralna, line = 7):
+   -- Unknown index keyword \newcommand.
+!! Input index error (file = Semestralna, line = 9):
+   -- Unknown index keyword \begin.
+!! Input index error (file = Semestralna, line = 11):
+   -- Unknown index keyword \begin.
+!! Input index error (file = Semestralna, line = 12):
+   -- Unknown index keyword \begin.
+!! Input index error (file = Semestralna, line = 14):
+   -- Unknown index keyword \includegraphics[scale=2,keepaspectratio=true].
+!! Input index error (file = Semestralna, line = 15):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Semestralna, line = 17):
+   -- Unknown index keyword \textsc.
+!! Input index error (file = Semestralna, line = 19):
+   -- Unknown index keyword \textsc.
+!! Input index error (file = Semestralna, line = 21):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Semestralna, line = 22):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Semestralna, line = 23):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Semestralna, line = 25):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Semestralna, line = 27):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Semestralna, line = 28):
+   -- Unknown index keyword \begin.
+!! Input index error (file = Semestralna, line = 29):
+   -- Unknown index keyword \begin.
+!! Input index error (file = Semestralna, line = 30):
+   -- Unknown index keyword \emph.
+!! Input index error (file = Semestralna, line = 31):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Semestralna, line = 32):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Semestralna, line = 33):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Semestralna, line = 34):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Semestralna, line = 35):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Semestralna, line = 36):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Semestralna, line = 37):
+   -- Unknown index keyword \end.
+!! Input index error (file = Semestralna, line = 38):
+   -- Unknown index keyword \end.
+!! Input index error (file = Semestralna, line = 39):
+   -- Unknown index keyword \begin.
+!! Input index error (file = Semestralna, line = 40):
+   -- Unknown index keyword \begin.
+!! Input index error (file = Semestralna, line = 41):
+   -- Unknown index keyword \end.
+!! Input index error (file = Semestralna, line = 42):
+   -- Unknown index keyword \end.
+!! Input index error (file = Semestralna, line = 44):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Semestralna, line = 46):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Semestralna, line = 47):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Semestralna, line = 49):
+   -- Unknown index keyword \end.
+!! Input index error (file = Semestralna, line = 50):
+   -- Unknown index keyword \end.
+!! Input index error (file = Semestralna, line = 53):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Semestralna, line = 55):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Semestralna, line = 57):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Semestralna, line = 58):
+   -- Unknown index keyword \section.
+!! Input index error (file = Semestralna, line = 61):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Semestralna, line = 62):
+   -- Unknown index keyword \section.
+!! Input index error (file = Semestralna, line = 64):
+   -- Unknown index keyword Vzávislostiodhodnôt$a\text.
+!! Input index error (file = Semestralna, line = 65):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Semestralna, line = 66):
+   -- Unknown index keyword $x_.
+!! Input index error (file = Semestralna, line = 67):
+   -- Unknown index keyword kde$a\text.
+!! Input index error (file = Semestralna, line = 69):
+   -- Unknown index keyword \section.
+!! Input index error (file = Semestralna, line = 70):
+   -- Unknown index keyword \subsection.
+!! Input index error (file = Semestralna, line = 72):
+   -- Unknown index keyword Jedanýbod$x_.
+!! Input index error (file = Semestralna, line = 73):
+   -- Unknown index keyword definovanávbodoch$x_.
+!! Input index error (file = Semestralna, line = 74):
+   -- Unknown index keyword ječíslo$f(x_.
+!! Input index error (file = Semestralna, line = 75):
+   -- Unknown index keyword $$\Deltaf(x_.
+!! Input index error (file = Semestralna, line = 77):
+   -- Unknown index keyword \subsection.
+!! Input index error (file = Semestralna, line = 78):
+   -- Unknown index keyword \subsubsection.
+!! Input index error (file = Semestralna, line = 80):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Semestralna, line = 81):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Semestralna, line = 82):
+   -- Unknown index keyword definovanáfunkcia$f(x,y,\Deltay,\Delta^.
+!! Input index error (file = Semestralna, line = 83):
+   -- Unknown index keyword $$f(x,y,\Deltay,\Delta^.
+!! Input index error (file = Semestralna, line = 84):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Semestralna, line = 85):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Semestralna, line = 87):
+   -- Unknown index keyword \textit.
+!! Input index error (file = Semestralna, line = 88):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Semestralna, line = 90):
+   -- Unknown index keyword \textit.
+!! Input index error (file = Semestralna, line = 91):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Semestralna, line = 92):
+   -- Unknown index keyword \paragraph.
+!! Input index error (file = Semestralna, line = 93):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Semestralna, line = 94):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Semestralna, line = 95):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Semestralna, line = 96):
+   -- Unknown index keyword $$g(x,y_.
+!! Input index error (file = Semestralna, line = 98):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Semestralna, line = 99):
+   -- Unknown index keyword $$g(x,y_.
+!! Input index error (file = Semestralna, line = 100):
+   -- Unknown index keyword vktorejneznámafunkcia$y_.
+!! Input index error (file = Semestralna, line = 101):
+   -- Unknown index keyword definovanáv$M$.Akjezávislosť$g$na$y_.
+!! Input index error (file = Semestralna, line = 102):
+   -- Unknown index keyword žerovnica\textit.
+!! Input index error (file = Semestralna, line = 103):
+   -- Unknown index keyword $y_.
+!! Input index error (file = Semestralna, line = 104):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Semestralna, line = 105):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Semestralna, line = 108):
+   -- Unknown index keyword \section.
+!! Input index error (file = Semestralna, line = 111):
+   -- Unknown index keyword \begin.
+!! Input index error (file = Semestralna, line = 112):
+   -- Unknown index keyword \bibitem.
+!! Input index error (file = Semestralna, line = 113):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Semestralna, line = 114):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Semestralna, line = 115):
+   -- Unknown index keyword \end.
+!! Input index error (file = Semestralna, line = 117):
+   -- Unknown index keyword \end.
+done (0 entries accepted, 87 rejected).
+Nothing written in Semestralna.ind.
+Transcript written in Semestralna.ilg.

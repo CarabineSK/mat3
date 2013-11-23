@@ -1,0 +1,117 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[slovak]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{indentfirst}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+\begin{document}
+
+\begin{titlepage}
+\begin{center}
+
+\includegraphics[scale=2,keepaspectratio=true]{./FRI_RGB_SK.png}
+ % FRI_RGB_SK.png: 200x200 pixel, 300dpi, 1.69x1.69 cm, bb=0 0 48 48
+
+\textsc{\newline\LARGE Žilinská univerzita v Žiline}\\[0.5cm]
+
+\textsc{\Large Fakulta riadenia a informatiky}\\[0.5cm]
+
+% Title
+\HRule \\[0.4cm]
+{ \huge \bfseries Analýza diferenčnej rovnice \\[0.4cm] }
+
+\HRule \\[1.5cm]
+
+% Author and supervisor
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Autori:}\\
+Matejko Peter\\
+Mudrák Ľuboš\\
+Rehák Tomáš\\
+Zárecký Martin\\
+Boďa Michal\\
+Kapusta Peter
+\end{flushleft}
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} 
+\end{flushright}
+\end{minipage}
+
+\vfill
+
+% Bottom of the page
+{\large \today}
+
+\end{center}
+\end{titlepage}
+
+
+\newpage
+
+\tableofcontents
+
+\newpage
+\section{Úvod}
+
+
+\newpage
+\section{Zadanie}
+
+V závislosti od hodnôt $ a \text{ a } b $
+analyzujte riešenia danej diferenčnej rovnice
+$x_{n+1}=\left(a+{\frac{b}{n}}\right)\,x_{n}$
+kde $ a \text{ a } b $ sú reálne čísla, také, že $ a + b > 0$. Výsledky ilustrujte na jednoduchých príkladoch. 
+
+\section{Definície}
+\subsection{Pojem diferencia}
+
+Je daný bod $x_{0}$ a číslo $h > 0$. Nech funkcia $y = f(x)$ je 
+definovaná v bodoch $x_{0} \text{ a } x_{0} + h$. \textit{Diferencia funkcie }$f(x)$\textit{ v bode }$x_{0}$
+je číslo $f(x_{0} + h) - f(x_{0})$. Značíme
+$$\Delta f(x_{0}) = f(x_{0} + h) - f(x_{0})$$
+
+\subsection{Pojem diferenčná rovnica}
+\subsubsection{Typy diferenčných rovníc}
+
+(Diferenčné rovnice 1. typu) 
+Nech pre všetky $x \in M$ je
+definovaná funkcia $f(x, y, \Delta y, \Delta ^{2}y, ..., \Delta ^{k}y)$. Rovnica tvaru
+$$f(x, y, \Delta y, \Delta ^{2}y, ..., \Delta ^{k}y) = 0 \text{ ,}$$
+v ktorej neznámou funkciou $y = \varphi(x)$, nazývame diferenčnú rovnicu k-teho 
+rádu a 1. typu definovanú v $M$.
+
+\textit{Partikulárnym riešením} tejto rovnice v $M$ nazveme každú funkciu
+$y = \varphi(x)$, ktorá pre všetky $x \in M$ spĺňa danú rovnicu.
+
+\textit{Všeobecným riešením} nazývame množinu všetkých partikulárnych
+riešení.
+\paragraph{\newline}
+(Diferenčné rovnice 2. typu)
+Nech je pre všetky $x \in M$
+definovaná funkcia
+$$g(x, y_{x}, y_{x+1}, ..., y_{x+k})\text{, kde }y_{x+j} = \varphi(x + j) j = 0, 1, 2, ..., k\text{.}$$
+
+Rovnicu tvaru
+$$g(x, y_{x}, y_{x+1}, ..., y_{x+k}) = 0\text{,}$$
+v ktorej neznáma funkcia $y_{x} = \varphi(x)$, nazývaná \textit{diferenčná rovnica 2.typu}
+definovaná v $M$. Ak je závislosť $g$ na $y_{x}$ a $y_{x+k}$ nekonštantná hovoríme,
+že rovnica \textit{je k-teho rádu}. Riešenie rovnice v $M$ nazývame každú funkciu
+$y_{x} = \varphi(x)$, ktorá pre všetky $x \in M$  spĺňa danú rovnicu. K tomu je nutné,
+aby definičný obor funkce $\varphi(x)$ obsahoval všetky $x \in M$ a taktiež body
+$x + 1, x + 2, ..., x + k$.
+
+
+\section{Vypracovanie}
+
+
+\begin{thebibliography}{9}
+\bibitem{pra}{\em Prágerová, A.:}
+               {\bf Diferenční rovnice.}
+           Polytechnická knižnice, Praha 1971.
+\end{thebibliography}
+
+\end{document}
