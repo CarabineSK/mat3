@@ -87,10 +87,12 @@ rádu a 1. typu definovanú v $M$.
 \textit{Partikulárnym riešením} tejto rovnice v $M$ nazveme každú funkciu
 $y = \varphi(x)$, ktorá pre všetky $x \in M$ spĺňa danú rovnicu.
 
-\textit{Všeobecným riešením} nazývame množinu všetkých partikulárnychriešení.
+\textit{Všeobecným riešením} nazývame množinu všetkých partikulárnych
+riešení.
 \paragraph{\newline}
 (Diferenčné rovnice 2. typu)
-Nech je pre všetky $x \in M$definovaná funkcia
+Nech je pre všetky $x \in M$
+definovaná funkcia
 $$g(x, y_{x}, y_{x+1}, ..., y_{x+k})\text{, kde }y_{x+j} = \varphi(x + j) j = 0, 1, 2, ..., k\text{.}$$
 
 Rovnicu tvaru
