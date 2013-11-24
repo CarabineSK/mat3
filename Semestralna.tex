@@ -1,7 +1,6 @@
 \documentclass[a4paper,10pt]{article}
 \usepackage[slovak]{babel}
 \usepackage[utf8]{inputenc}
-\usepackage{indentfirst}
 \usepackage{amsmath}
 \usepackage{amsthm}
 \usepackage{graphicx}
@@ -88,8 +87,8 @@ $$\Delta f(x_{0}) = f(x_{0} + h) - f(x_{0})$$
 \begin{defin}
 (Diferenčné rovnice 1. typu) 
 Nech pre všetky $x \in M$ je
-definovaná funkcia $f(x, y, \Delta y, \Delta ^{2}y, ..., \Delta ^{k}y)$. Rovnica tvaru
-$$f(x, y, \Delta y, \Delta ^{2}y, ..., \Delta ^{k}y) = 0 \text{ ,}$$
+definovaná funkcia $f(x, y, \Delta y, \Delta ^{2}y, \ldots, \Delta ^{k}y)$. Rovnica tvaru
+$$f(x, y, \Delta y, \Delta ^{2}y, \ldots, \Delta ^{k}y) = 0 \text{ ,}$$
 v ktorej neznámou funkciou $y = \varphi(x)$, nazývame diferenčnú rovnicu k-teho 
 rádu a 1. typu definovanú v $M$.
 \end{defin}
@@ -106,17 +105,44 @@ riešení.
 (Diferenčné rovnice 2. typu)
 Nech je pre všetky $x \in M$
 definovaná funkcia
-$$g(x, y_{x}, y_{x+1}, ..., y_{x+k})\text{, kde }y_{x+j} = \varphi(x + j) j = 0, 1, 2, ..., k\text{.}$$
+$$g(x, y_{x}, y_{x+1}, \ldots, y_{x+k})\text{, kde }y_{x+j} = \varphi(x + j) j = 0, 1, 2, \ldots, k\text{.}$$
 \end{defin}
 
 Rovnicu tvaru
-$$g(x, y_{x}, y_{x+1}, ..., y_{x+k}) = 0\text{,}$$
+$$g(x, y_{x}, y_{x+1}, \ldots, y_{x+k}) = 0\text{,}$$
 v ktorej neznáma funkcia $y_{x} = \varphi(x)$, nazývaná \textit{diferenčná rovnica 2.typu}
 definovaná v $M$. Ak je závislosť $g$ na $y_{x}$ a $y_{x+k}$ nekonštantná hovoríme,
 že rovnica \textit{je k-teho rádu}. Riešenie rovnice v $M$ nazývame každú funkciu
 $y_{x} = \varphi(x)$, ktorá pre všetky $x \in M$  spĺňa danú rovnicu. K tomu je nutné,
 aby definičný obor funkce $\varphi(x)$ obsahoval všetky $x \in M$ a taktiež body
-$x + 1, x + 2, ..., x + k$.
+$x + 1, x + 2, \ldots, x + k$.
+\newpage
+\subsubsection{Rekurentná formula}
+Rekurentnú formulu vieme získať z diferenčnej rovnice vyjadrením $(n+k)$-teho člena pomocou $k$ predchádzajúcich členov rovnice.
+
+\paragraph{}
+Majme danú diferenčnú rovnicu: $$g(x, y_{x}, y_{x+1}, \ldots, y_{x+k}) = 0\text{.}$$
+
+\begin{enumerate}
+	\item Nech definičný obor tejto rovnice sú prirodzené čísla $ n = 1, 2, 3, \ldots a$
+		ďalej zaveďme všeobecnejšie označenie pre členy postupnosti: $ y_{n} =  a_{n}$,
+		takže rovnicu vieme prepísať ako  $$g(n, a_{n}, a_{n+1}, \ldots, a_{n+k}) = 0\text{.}$$
+		Predpokladajme, že túto rovnicu vieme jednoznačne rozriešiť vzhľadom k $ a_{n+k}$ :
+		$$a_{n+k} = G(n, a_{n}, a_{n+1}, \ldots, a_{n+k-1})\text{,}$$
+		kde $G$ je funkcia, ktorú sme dostali riešením pôvodnej rovnice.\linebreak[4]
+		 Dostali sme vlastne všeobecný rekurentný vzorec pre postupnosť $a_{n}$,\linebreak[4] v ktorom je $(n+k)$-ty 				člen vyjadrený pomocou $k$ predchádzajúcich členov 
+		$a_{n}, a_{n+1}, \ldots, a_{n+k-1}$ a premennej $n$.
+	\item Pozrime sa na riešenie, keď máme vopred dané (ľubovoľné) čísla $ a_{1}, a_{2}, \ldots, a_{k}$.
+		Vieme, že po dosadení členov do funkcie $G$ vypočítame jednoznačne člen
+		$$a_{k+1} = G(1, a_{1}, a_{2}, \ldots, a_{k};)\text{,}$$ ďalším dosadením vypočítame
+		$$a_{k+2} = G(2, a_{2}, a_{3}, \ldots, a_{k+1};)\text{atď.}$$
+		Všeobecný $n$-tý člen an dostaneme vypočítaním elementárnej funkcie
+		$n$ a daných $k$ prvých čísiel $ a_{1}, a_{2}, \ldots, a_{k}$. Táto funkcia je práve partikulárnym riešením 				diferenčnej rovnice s počiatočnými podmienkami $ a_{1}, a_{2}, \ldots, a_{k}$.	
+\end{enumerate}
+
+Touto druhou úvahou sa súčasne znovu potvrdzuje, že všeobecné riešenie rovnice $k$-teho rádu 
+$a_{n+k} = G(n, a_{n}, a_{n+1}, \ldots, a_{n+k-1})$ má obsahovať
+$k$ všeobecných konštant, ktoré je možno si ľubovoľne zvoliť.
 
 
 \section{Vypracovanie}

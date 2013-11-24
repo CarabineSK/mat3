@@ -7,4 +7,6 @@
 \contentsline {subsubsection}{\numberline {3.2.1}Typy diferen\IeC {\v c}n\IeC {\'y}ch rovn\IeC {\'\i }c}{3}
 \contentsline {paragraph}{}{3}
 \contentsline {paragraph}{}{3}
+\contentsline {subsubsection}{\numberline {3.2.2}Rekurentn\IeC {\'a} formula}{4}
+\contentsline {paragraph}{}{4}
 \contentsline {section}{\numberline {4}Vypracovanie}{4}
