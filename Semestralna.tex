@@ -1,8 +1,10 @@
+% !TeX spellcheck = sk_SK
 \documentclass[a4paper,10pt]{article}
 \usepackage[slovak]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{amsthm}
+\usepackage{setspace}
 \usepackage{graphicx}
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 
@@ -83,13 +85,12 @@ $$\Delta f(x_{0}) = f(x_{0} + h) - f(x_{0})$$
 \end{defin}
 \subsection{Pojem diferenčná rovnica}
 \subsubsection{Typy diferenčných rovníc}
-
 \begin{defin}
 (Diferenčné rovnice 1. typu) 
 Nech pre všetky $x \in M$ je
 definovaná funkcia $f(x, y, \Delta y, \Delta ^{2}y, \ldots, \Delta ^{k}y)$. Rovnica tvaru
 $$f(x, y, \Delta y, \Delta ^{2}y, \ldots, \Delta ^{k}y) = 0 \text{ ,}$$
-v ktorej neznámou funkciou $y = \varphi(x)$, nazývame diferenčnú rovnicu k-teho 
+v ktorej neznámou funkciou $y = \varphi(x)$, nazývame diferenčnú rovnicu k-tého 
 rádu a 1. typu definovanú v $M$.
 \end{defin}
 
@@ -112,13 +113,13 @@ Rovnicu tvaru
 $$g(x, y_{x}, y_{x+1}, \ldots, y_{x+k}) = 0\text{,}$$
 v ktorej neznáma funkcia $y_{x} = \varphi(x)$, nazývaná \textit{diferenčná rovnica 2.typu}
 definovaná v $M$. Ak je závislosť $g$ na $y_{x}$ a $y_{x+k}$ nekonštantná hovoríme,
-že rovnica \textit{je k-teho rádu}. Riešenie rovnice v $M$ nazývame každú funkciu
+že rovnica \textit{je k-tého rádu}. Riešenie rovnice v $M$ nazývame každú funkciu
 $y_{x} = \varphi(x)$, ktorá pre všetky $x \in M$  spĺňa danú rovnicu. K tomu je nutné,
-aby definičný obor funkce $\varphi(x)$ obsahoval všetky $x \in M$ a taktiež body
+aby definičný obor funkcie $\varphi(x)$ obsahoval všetky $x \in M$ a taktiež body
 $x + 1, x + 2, \ldots, x + k$.
 \newpage
 \subsubsection{Rekurentná formula}
-Rekurentnú formulu vieme získať z diferenčnej rovnice vyjadrením $(n+k)$-teho člena pomocou $k$ predchádzajúcich členov rovnice.
+Rekurentnú formulu vieme získať z diferenčnej rovnice vyjadrením $(n+k)$-tého člena pomocou $k$ predchádzajúcich členov rovnice.
 
 \paragraph{}
 Majme danú diferenčnú rovnicu: $$g(x, y_{x}, y_{x+1}, \ldots, y_{x+k}) = 0\text{.}$$
@@ -142,18 +143,25 @@ Majme danú diferenčnú rovnicu: $$g(x, y_{x}, y_{x+1}, \ldots, y_{x+k}) = 0\te
 
 Touto druhou úvahou sa súčasne znovu potvrdzuje, že všeobecné riešenie rovnice $k$-teho rádu 
 $a_{n+k} = G(n, a_{n}, a_{n+1}, \ldots, a_{n+k-1})$ má obsahovať
-$k$ všeobecných konštant, ktoré je možno si ľubovoľne zvoliť.
+$k$ všeobecných konštánt, ktoré je možno si ľubovoľne zvoliť.
 
 \newpage
 \section{Vypracovanie}
 \textbf{Popis našej rovnice}\newline
-$x_{n+1}=\left(a+{\frac{b}{n}}\right)\,x_{n}$, kde $a,b \in R, a+b >0$ Ide o rekurentný vzorec pre postupnosť.\newline\newline
-\textbf{Vypísanie prvých členov postupnosti}\newline
- $n=1$ : $x_{2}= (a+b)\*x_{1}$\newline
- $n=2$ : $x_{3}=(a+\frac{b}{2})\*x_{2}=(a+\frac{b}{2})(a+b)\*x_{1}$\newline
- $n=3$ : $x_{2}=(a+\frac{b}{3})\*x_{3}=(a+\frac{b}{3})\*(a+\frac{b}{2})(a+b)\*x_{1}$\newline
- $n=4$ : $x_{2}=(a+\frac{b}{4})\*x_{4}=(a+\frac{b}{4})\*(a+\frac{b}{3})\*(a+\frac{b}{2})(a+b)\*x_{1}$\newline
- $n=k-1$ : $x_{k}=(a+\frac{b}{k-1})\*x_{k-1}=(a+\frac{b}{k-1})\*(a+\frac{b}{k-2})\ldots(a+\frac{b}{2})\*(a+b)\*x_{1}$
+$x_{n+1}=\left(a+{\frac{b}{n}}\right)\,x_{n}$, kde $a,b \in R,\, a+b >0$. Ide o rekurentný vzorec pre postupnosť.\newline\newline
+\textbf{Vypísanie prvých členov postupnosti}
+\begin{spacing}{1.4}
+\begin{tabbing}
+\hspace{2cm}\=\kill
+ $n=1$ :\> $x_{2}= (a+b)\*x_{1}$\\ 
+ $n=2$ :\>  $x_{3}=(a+\frac{b}{2})\*x_{2}=(a+\frac{b}{2})(a+b)\*x_{1}$ \\ 
+ $n=3$ :\>$x_{2}=(a+\frac{b}{3})\*x_{3}=(a+\frac{b}{3})\*(a+\frac{b}{2})(a+b)\*x_{1}$\\
+ $n=4$ :\> $x_{2}=(a+\frac{b}{4})\*x_{4}=(a+\frac{b}{4})\*(a+\frac{b}{3})\*(a+\frac{b}{2})
+ (a+b)\*x_{1}$\\ 
+  $n=k-1$ :\> $x_{k}=(a+\frac{b}{k-1})\*x_{k-1}=(a+\frac{b}{k-1})\*(a+\frac{b}{k-2})\ldots(a+\frac{b}{2})\*(a+b)\*x_{1}$
+\end{tabbing} 
+\end{spacing}
+ 
 
 \subsection{Triviálne riešenie}
 Nech $x_{1}=0$.\newline
@@ -162,15 +170,19 @@ zaoberať závislosťou od hodnôt $ a,b $.
 
 \subsection{Všeobecné riešenie}
 $x_{n+1}=\left(a+{\frac{b}{n}}\right)\*x_{n} \text{, } n \geq 1 \text{ a nech } a + {\frac{b}{n}} = f(n)$, potom
-$x_{n+1}=f(n)\*x_{n}   $, kde $ n = 1 + k $, $ k = 0,1,2,... $\newline
-\noindent\newline
-$ x_{n}=f(n-1)\*x_{n-1}    $\newline
-$ x_{n-1}=f(n-2)\*x_{n-2}    $\newline
-$ x_{n-2}=f(n-3)\*x_{n-3}    $\newline
-\vdots \newline
-$ x_{n-(k-1)}=f(n-k)\*x_{n-k}    $\newline
-\noindent\newline
-a teda $ x_{2} = f_{1}\*x_{1} $
+$x_{n+1}=f(n)\*x_{n}   $, kde $ n = 1 + k $, $ k = 0,1,2,... $
+\begin{spacing}{1.3}
+\begin{tabbing}
+\hspace{2cm}\=\kill
+$ x_{n}$\>$=f(n-1)\*x_{n-1}    $\\
+$ x_{n-1}$\>$=f(n-2)\*x_{n-2}    $\\
+$ x_{n-2}$\>$=f(n-3)\*x_{n-3}    $\\
+\>\vdots \\
+$ x_{n-(k-1)}$\>$=f(n-k)\*x_{n-k}    $
+\end{tabbing} 
+\end{spacing}
+\noindent a teda $ x_{2} = f_{1}\*x_{1} $. 
+%Kde počiatočná hodnota $x_{n}$ v bode $n=1$ je prvý člen postupnosti, teda zvolená konštanta.%
 
 \subsection{Závislosť od hodnôt a, b}
 Nech $b=0$,  $x_{1}>0$.\newline
