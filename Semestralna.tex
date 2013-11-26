@@ -146,14 +146,35 @@ $k$ všeobecných konštant, ktoré je možno si ľubovoľne zvoliť.
 
 \newpage
 \section{Vypracovanie}
+\textbf{Popis našej rovnice}\newline
+$x_{n+1}=\left(a+{\frac{b}{n}}\right)\,x_{n}$, kde $a,b \in R, a+b >0$ Ide o rekurentný vzorec pre postupnosť.\newline\newline
+\textbf{Vypísanie prvých členov postupnosti}\newline
+ $n=1$ : $x_{2}= (a+b)\*x_{1}$\newline
+ $n=2$ : $x_{3}=(a+\frac{b}{2})\*x_{2}=(a+\frac{b}{2})(a+b)\*x_{1}$\newline
+ $n=3$ : $x_{2}=(a+\frac{b}{3})\*x_{3}=(a+\frac{b}{3})\*(a+\frac{b}{2})(a+b)\*x_{1}$\newline
+ $n=4$ : $x_{2}=(a+\frac{b}{4})\*x_{4}=(a+\frac{b}{4})\*(a+\frac{b}{3})\*(a+\frac{b}{2})(a+b)\*x_{1}$\newline
+ $n=k-1$ : $x_{k}=(a+\frac{b}{k-1})\*x_{k-1}=(a+\frac{b}{k-1})\*(a+\frac{b}{k-2})\ldots(a+\frac{b}{2})\*(a+b)\*x_{1}$
+
 \subsection{Triviálne riešenie}
 Nech $x_{1}=0$.\newline
  Potom dostávame triviálne riešenie $x_{n+1} = 0$ a teda každý člen postupnosti bude mať hodnotu $0$. Ďalej, v našom vypracovaní, budeme predpokladať, že $ x_{1} > 0 $ a teda sa budeme 
 zaoberať závislosťou od hodnôt $ a,b $.
 
+\subsection{Všeobecné riešenie}
+$x_{n+1}=\left(a+{\frac{b}{n}}\right)\*x_{n} \text{, } n \geq 1 \text{ a nech } a + {\frac{b}{n}} = f(n)$, potom
+$x_{n+1}=f(n)\*x_{n}   $, kde $ n = 1 + k $, $ k = 0,1,2,... $\newline
+\noindent\newline
+$ x_{n}=f(n-1)\*x_{n-1}    $\newline
+$ x_{n-1}=f(n-2)\*x_{n-2}    $\newline
+$ x_{n-2}=f(n-3)\*x_{n-3}    $\newline
+\vdots \newline
+$ x_{n-(k-1)}=f(n-k)\*x_{n-k}    $\newline
+\noindent\newline
+a teda $ x_{2} = f_{1}\*x_{1} $
+
 \subsection{Závislosť od hodnôt a, b}
 Nech $b=0$,  $x_{1}>0$.\newline
-Potom rovnica $x_{n+1}=\left(a+{\frac{b}{n}}\right)\,x_{n}$  nadobudne tvar  $x_{n+1}= a*x_{n}$.
+Potom rovnica $x_{n+1}=\left(a+{\frac{b}{n}}\right)\*x_{n}$  nadobudne tvar  $x_{n+1}= a\*x_{n}$.
 Teda každý ďalší člen postupnosti $x_{n+1}$ je $a$-násobkom predchádzajúceho člena  $x_{n}$.
 Dosadením  $b=0$ teda vzniká z našej rovnice Geometrická postupnosť.
 \newpage
