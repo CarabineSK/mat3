@@ -214,8 +214,21 @@ Položme $ \sum\limits_{n=0}^\infty x_{n+1} = 1 $, potom $ 1=\sum\limits_{n=0}^\
 Môžeme teda prehlásiť, že ak $x_{1}=e^{-b} $, potom riešením rovnice
 $x_{n+1}=\left(a+{\frac{b}{n}}\right)\,x_{n}$ kde $a=0$, $b>0$
 je Poissonovo rozdelenie $Po(\lambda)$ s parametrom $\lambda=b$.\\
-Metódou matematickej indukcie sme teda dokázali, že $x_{n}\sim Po(\lambda)$, keďže každý ďalší člen $x_{n+1}\sim Po(\lambda)$.
+Metódou matematickej indukcie sme teda dokázali, že $x_{n}\sim Po(\lambda)$, keďže každý ďalší člen $x_{n+1}\sim Po(\lambda)$.\\
 %Koniec 246%
+
+%247%
+
+Ďalej skúmajme prípad, kedy $ a \in (0;1) $. Z pôvodnej rovnice teda :\\
+\begin{spacing}{1.6}
+\begin{tabbing}
+\hspace{0.5cm}\=\kill 
+$ x_{2}$ \> $=(a+b)\*x_{1} $\\
+$ x_{3}$ \> $=(a + \frac{b}{2}) \* (a + b)\*x_{1} ) $\\
+$ x_{4}$ \> $=(a + \frac{b}{3})\*x_{3}= (a + \frac{b}{3})\*(a + \frac{b}{2})\*(a + b)\*x_{1} $\\
+$ x_{n}$ \> $=(a + \frac{b}{n-1})\*(a + \frac{b}{n-2}) \ldots (a + \frac{b}{2})\*(a + b)\*x_{1}$\\
+\end{tabbing} 
+\end{spacing}
 \newpage
 \section{Záver}
 
