@@ -219,16 +219,32 @@ Metódou matematickej indukcie sme teda dokázali, že $x_{n}\sim Po(\lambda)$, 
 
 %247%
 
-Ďalej skúmajme prípad, kedy $ a \in (0;1) $. Z pôvodnej rovnice teda :\\
+Ďalej skúmajme prípad, kedy $ a \in (0;1) $. Z pôvodnej rovnice teda :
 \begin{spacing}{1.6}
 \begin{tabbing}
-\hspace{0.5cm}\=\kill 
+\hspace{0.7cm}\=\kill 
 $ x_{2}$ \> $=(a+b)\*x_{1} $\\
 $ x_{3}$ \> $=(a + \frac{b}{2}) \* (a + b)\*x_{1} ) $\\
 $ x_{4}$ \> $=(a + \frac{b}{3})\*x_{3}= (a + \frac{b}{3})\*(a + \frac{b}{2})\*(a + b)\*x_{1} $\\
+\vdots \\
 $ x_{n}$ \> $=(a + \frac{b}{n-1})\*(a + \frac{b}{n-2}) \ldots (a + \frac{b}{2})\*(a + b)\*x_{1}$\\
+$ x_{n+1}$ \> $=(a + \frac{b}{n})\*(a + \frac{b}{n-1}) \ldots (a + \frac{b}{2})\*(a + b)\*x_{1}$\\
+$ x_{n+1}$ \> $=\frac{a^{n}}{n!}\*(n + \frac{b}{a})\*(n-1 + \frac{b}{a}) \ldots (2 + \frac{b}{a})\*(1 + \frac{b}{a})\*x_{1}$,\\
 \end{tabbing} 
 \end{spacing}
+kde $ x_{1} $ je prvým členom postupnosti. Vychádzajúc z $ a + b > 0 $ nech $ 1 + \frac{b}{a} = \alpha > 0$\\
+$ x_{n+1} = \frac{a^{n}}{n!}\*(n+\alpha-1)\*(n+\alpha-2) \ldots (1+\alpha)\*\alpha\*x_{1}$\\\newpage
+Po rozšírení pravej strany jednotkou v tvare $ \frac{(\alpha-1)!}{(\alpha-1)!} $ dostávame : \\
+\begin{spacing}{2.2}
+\begin{tabbing}
+\hspace{0.7cm}\=\kill 
+$ x_{n+1} = \frac{a^{n}\*(n+\alpha-1)!}{n!\*(\alpha-1)!}\*x_{1} $\\
+$ x_{n+1} = a^{n}\* \dbinom{n+\alpha-1}{n}\*x_{1} $\\	%Pr alebo Po Kenny dobre ?%
+$ x_{n+1} = \dbinom{n+\alpha-1}{n}\*(1-a)!^{\alpha}\*a^{n} = Pr(x = n) $,
+\end{tabbing} 
+\end{spacing}
+kde $ x_{1} = (1-a)^{\alpha} \Rightarrow x_{1} = (1-a)^{1+\frac{b}{a}}$ 
+%Koniec 247%
 \newpage
 \section{Záver}
 
