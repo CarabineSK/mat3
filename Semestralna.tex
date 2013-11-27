@@ -267,11 +267,28 @@ $ x_{n} $.\\
 Následne je potrebné sa zaoberať prípadom, keď $ a<0 $. Nesmieme však zabudnúť na podmienku $ a+b=0 $.
 Predpokladajme, že existuje kladné celé číslo $ z $ také, že $ a + \frac{b}{z+1} = 0 $. V tomto prípade
 platí, že pre všetky $ n\geq z+1  $ $ x_{n+1} = 0 $.
-Kedže $ \frac{b}{n} (???) 0$ a $ b>0 $, $a + \frac{b}{n} \leq 0$ pre všetky dostatočne veľké $ n $. Ak $ z $ neexistuje,
+Kedže $ \frac{b}{n} \rightarrow 0$ a $ b>0 $, $a + \frac{b}{n} \leq 0$ pre všetky dostatočne veľké $ n $. Ak $ z $ neexistuje,
 potom zvolenie $ n $ je minimum tak $ a+\frac{b}{n} <0$, dostaneme $ x_{n+1} <0 $, čo je rozpor.
 Môžeme teda písať $ z = -(1+\frac{b}{a}) $, potom :
-
-
+\begin{spacing}{1.6}
+\begin{tabbing}
+\hspace{1.5cm}\=\kill 
+$ n=1 $ \> $x_{2}=(a+b)\*x_{1} $\\
+$ n=2 $ \> $x_{3}=(a + \frac{b}{2}) \* (a + b)\*x_{1} ) $\\
+ \> \vdots \\
+$ n = m $ \> $ x_{m+1} = (a + \frac{b}{m})\*(a + \frac{b}{m-1})\ldots (a + \frac{b}{2})\*(a+b)\*x_{1}$\\
+\> $= \frac{a^{m}}{m!}\*(m + \frac{b}{a})\*(m-1+\frac{b}{a}) \ldots (2+\frac{b}{a})\*(1+\frac{b}{a})\*x_{1}) $\\
+\> $= \frac{a^{m}}{m!}\*(-z+m-1)\*(-z+m-2) \ldots (-z+1)\*(-z)\*x_{1}) $\\
+\> $= (-1)^{m}\*\frac{a^{m}}{m!}\*(m-1-z)\*(m-2-z)\ldots(1-z)\*z*x_{1} $\\
+\> $= \dbinom{z}{m}\*(-a)^{m}\*x_{1}  $\\
+\end{tabbing} 
+\end{spacing}
+Nech je $ A = -a >0 $. Ak $ \sum\limits_{n=0}^\infty x_{n+1} = 1 $ a $ x_{n+1} = 0 $ pre $ n\geq z+1 $ potom 
+	$$ x_{1} \sum\limits_{n=0}^z \dbinom{z}{n} A^{n}= 1 $$\newpage
+Podľa binomickej formuly $ \sum\limits_{n=0}^z \dbinom{z}{n} A^{n}= (1+A)^{z} $, potom $ x_{1} = (1+A)^{-z} $.
+Vzhľadom k tomu môžeme každé kladné číslo zapísať ako $ A = \frac{p}{1-p} $,\\ kde $ p \in (0,1) $. Potom
+$ x_{1} = (1 + \frac{p}{1-p})^{-z} = (1-p^{z}) \Rightarrow x_{n+1} = \dbinom{z}{n}\*p^{n}\*(1-p^{z-n}) $ a to 
+môžeme zapísať ako $ X \sim Bin(z,\frac{a}{a-1}) $.
 \newpage
 \section{Záver}
 
