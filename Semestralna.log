@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.11.12)  27 NOV 2013 20:44
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.11.12)  27 NOV 2013 21:28
 entering extended mode
 **Semestralna.tex
 (D:\Dokumenty\5_semester\Matalyza3\0_sem\Semestralna.tex
@@ -455,6 +455,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 237--238
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--252
+
+ []
+
 [6] [7] (D:\Dokumenty\5_semester\Matalyza3\0_sem\Semestralna.aux) ) 
 Here is how much of TeX's memory you used:
  2528 strings out of 493921
@@ -481,7 +486,7 @@ ublic/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
 fonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.p
 fb>
-Output written on Semestralna.pdf (8 pages, 227784 bytes).
+Output written on Semestralna.pdf (8 pages, 229238 bytes).
 PDF statistics:
  100 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
