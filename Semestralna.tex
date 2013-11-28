@@ -146,8 +146,8 @@ $k$ všeobecných konštánt, ktoré je možno si ľubovoľne zvoliť.
 \newpage
 \section{Vypracovanie}
 \textbf{Popis problému}\newline
-$x_{n+1}=\left(a+{\frac{b}{n}}\right)\,x_{n}$, kde $a,b \in R,\, a+b >0$. Ide o rekurentný vzorec pre postupnosť.\newline\newline
-\textbf{Vypísanie prvých členov postupnosti}
+Analýzou diferenčnej rovnice $ (1) $ sme zistili, že sa jedná o homogénnu lineárnu diferenčnú rovnicu prvého stupňa druhého typu s nekonštantnými koeficientami. Ďalej sa budeme zaoberať riešeniami tejto rovnice s využitím poznatku, že sa jedná o rekurentný popis postupnosti. Dosadzovaním rôznych hodnôt za $ a $ a $ b $ budeme hľadať riešenia rovnice, a teda priameho vzorca pre členy postupnosti. \newline\newline
+Prvých pár členov postupnosti má tvar : 
 \begin{spacing}{1.4}
 \begin{tabbing}
 \hspace{2cm}\=\kill
@@ -163,32 +163,27 @@ $x_{n+1}=\left(a+{\frac{b}{n}}\right)\,x_{n}$, kde $a,b \in R,\, a+b >0$. Ide o 
 
 \subsection{Triviálne riešenie}
 Nech $x_{1}=0$.\newline
- Potom dostávame triviálne riešenie $x_{n+1} = 0$, číže každý člen postupnosti bude mať hodnotu $0$. Ďalej budeme predpokladať, že $ x_{1} > 0 $ a teda sa budeme 
+ Potom dostávame triviálne riešenie $x_{n+1} = 0$, číže každý člen postupnosti bude mať hodnotu $0$. Ďalej budeme predpokladať, že $ x_{1} > 0 $, a teda sa budeme 
 zaoberať závislosťou od hodnôt $ a,b $.
 
 \subsection{Všeobecné riešenie}
 $x_{n+1}=\left(a+{\frac{b}{n}}\right)\*x_{n} \text{, } n \geq 1 \text{ a nech } a + {\frac{b}{n}} = f(n)$, potom
 $x_{n+1}=f(n)\*x_{n}   $, kde $ n = 1 + k $, $ k = 0,1,2,... $
-\begin{spacing}{1.3}
-\begin{tabbing}
-\hspace{1.5cm}\=\kill
-$ x_{n}$\>$=f(n-1)\*x_{n-1}    $\\
-$ x_{n-1}$\>$=f(n-2)\*x_{n-2}    $\\
-$ x_{n-2}$\>$=f(n-3)\*x_{n-3}    $\\
-\>\vdots \\
-$ x_{n-(k-1)}$\>$=f(n-k)\*x_{n-k}    $
-\end{tabbing} 
-\end{spacing}
-\noindent, a teda $ x_{2} = f(1)\*x_{1} $. 
+\begin{align*}
+x_{n}&=f(n-1)\*x_{n-1}    \\
+x_{n-1}&=f(n-2)\*x_{n-2}    \\
+x_{n-2}&=f(n-3)\*x_{n-3}    \\
+&\vdots \\
+x_{n-(k-1)}&=f(n-k)\*x_{n-k}\text{,}    
+\end{align*}
+
+
+\noindent a teda $ x_{2} = f(1)\*x_{1} $. 
 %Kde počiatočná hodnota $x_{n}$ v bode $n=1$ je prvý člen postupnosti, teda zvolená konštanta.%
 
 \subsection{Závislosť od hodnôt a, b}
-Nech $ b=0 $,  $x_{1}>0$.\newline
-Potom rovnica $x_{n+1}=\left(a+{\frac{b}{n}}\right)\*x_{n}$  nadobudne tvar  $x_{n+1}= a\*x_{n}$, 
-teda každý ďalší člen postupnosti $x_{n+1}$ je $a$-násobkom predchádzajúceho člena  $x_{n}$.
-Dosadením  $b=0$ teda vzniká z našej rovnice \textbf{geometrická postupnosť}.
-\newpage
-Predpokladajme, že $ b=0 $ a $ a > 0 $, teda rovnica (*) má tvar $ x_{n+1} = a\*x_{n} $, čiže sa jedná o geometrickú postupnosť
+
+Predpokladajme, že $ b=0 $ a $ a > 0 $, teda rovnica $ (1) $ má tvar $ x_{n+1} = a\,x_{n} $, čiže sa jedná o \textbf{geometrickú postupnosť}
 $ x_{n} = a\*x_{n-1} $, kde $ a $ je koeficientom geometrickej postupnosti. V prípade, že $ a = 1 $ dostávame $ x_{n} = x_{n-1} $.
 %Vraj nejake grafy%
 
@@ -205,14 +200,11 @@ x_{n+1}&=\frac{b^{n}}{(n)!}\*x_{1}   \\
 Čo sa podobá na Poissonove rozdelenie pravdepodobnosti. \\
 Položme $ \sum\limits_{n=0}^\infty x_{n+1} = 1 $, potom $ 1=\sum\limits_{n=0}^\infty x_{n+1} = x_{1}\*\sum\limits_{n=0}^\infty \frac{b^{n}}{n!} = x_{1}\*e^{b}$ $ \Rightarrow $ $ x_{1} = e^{-b} $.
 Môžeme teda prehlásiť, že ak $x_{1}=e^{-b} $, potom riešením rovnice\\
-$x_{n+1}=\left(a+{\frac{b}{n}}\right)\,x_{n}$ kde $a=0$, $b>0$
+$(1)$ kde $a=0$, $b>0$
 je \textbf{Poissonovo rozdelenie} $Po(\lambda)$ s parametrom $\lambda=b$.\\
-Metódou matematickej indukcie sme teda dokázali, že $x_{n}\sim Po(\lambda)$, keďže každý ďalší člen $x_{n+1}\sim Po(b)$.\\
-%Koniec 246%
-
-%247%
-
-Ďalej skúmajme prípad, kedy $ a \in (0;1) $. Z pôvodnej rovnice teda :
+Metódou matematickej indukcie sme teda dokázali, že $x_{n}\sim Po(b)$, keďže každý ďalší člen $x_{n+1}\sim Po(b)$, resp. $ X \sim Po(b)$.\\
+%Koniec 246%%247%
+\\Ďalej skúmajme prípad, kedy $ a \in (0;1) $. Z pôvodnej rovnice teda :
 \begin{align*}
 x_{2}&=(a+b)\*x_{1} \\
 x_{3}&=(a + \frac{b}{2}) \* (a + b)\*x_{1} \\
@@ -233,7 +225,7 @@ x_{n+1} &= \dbinom{n+\alpha-1}{n}\*(1-a)!^{\alpha}\*a^{n} = Pr(X = n) ,
 \end{align*}
 \noindent kde $ x_{1} = (1-a)^{\alpha} \Rightarrow x_{1} = (1-a)^{1+\frac{b}{a}}$ 
 %Koniec 247%%Teraz 248%
-Môžeme teda povedať, že $ x_{n+1} \sim NB(2,9) $, číže $ x_{n+1}\sim NB (1+\frac{b}{a}; a) $,čo je negatívne binomické rozdelenie, pričom
+Môžeme teda povedať, že $ x_{n+1} \sim NB(2,9) $, číže $ x_{n+1}\sim NB (1+\frac{b}{a}; a) $,čo je \textbf{negatívne binomické rozdelenie}, pričom
 $ a \in (0;1), a+b>0 \Rightarrow b \in (0;\infty), x_{1}=(1-a)^{a+\frac{b}{a}}$. Matematickou dedukciou je teda dokázané, že to platí aj pre 
 $ x_{n} $.\\
 %Koniec 248%%Zacina 244, ale to len prepisem, lebo neviem kam s tym%
@@ -255,8 +247,7 @@ $ x_{n} $.\\
 Následne je potrebné sa zaoberať prípadom, keď $ a<0 $. Nesmieme však zabudnúť na podmienku $ a+b=0 $.
 Predpokladajme, že existuje kladné celé číslo $ z $ také, že $ a + \frac{b}{z+1} = 0 $. V tomto prípade
 platí, že pre všetky $ n\geq z+1  $ $ x_{n+1} = 0 $.
-Kedže $ \frac{b}{n} \rightarrow 0$ a $ b>0 $, $a + \frac{b}{n} \leq 0$ pre všetky dostatočne veľké $ n $. Ak $ z $ neexistuje,
-potom zvolenie $ n $ je minimum tak $ a+\frac{b}{n} <0$, dostaneme $ x_{n+1} <0 $, čo je rozpor.
+Kedže $ \frac{b}{n} \rightarrow 0$ a $ b>0 $, $a + \frac{b}{n} \leq 0$ pre všetky dostatočne veľké $ n $. Ak také $ z $ neexistuje, potom zvolením minimálneho $ n $, takého, že $ a + \frac{b}{n} < 0 $ dostávame $ x_{n+1}<0 $, čo je spor.
 Môžeme teda písať $ z = -(1+\frac{b}{a}) $, potom :
 \begin{align*}
 x_{2}&=(a+b)\*x_{1} \\
@@ -270,16 +261,16 @@ x_{n+1} &= (a + \frac{b}{n})\*(a + \frac{b}{n-1})\ldots (a + \frac{b}{2})\*(a+b)
 &= \dbinom{z}{n}\*(-a)^{n}\*x_{1}  \\
 \end{align*}
 \noindent Nech je $ A = -a >0 $. Ak $ \sum\limits_{n=0}^\infty x_{n+1} = 1 $ a $ x_{n+1} = 0 $ pre $ n\geq z+1 $ potom 
-$$ x_{1} \sum\limits_{n=0}^z \dbinom{z}{n} A^{n}= 1 $$\newpage
-\noindent Podľa binomickej formuly $ \sum\limits_{n=0}^z \dbinom{z}{n} A^{n}= (1+A)^{z} $, potom $ x_{1} = (1+A)^{-z} $.
-Vzhľadom k tomu môžeme každé kladné číslo zapísať ako $ A = \frac{p}{1-p} $,\\ kde $ p \in (0,1) $. Potom
-$ x_{1} = (1 + \frac{p}{1-p})^{-z} = (1-p^{z}) \Rightarrow x_{n+1} = \dbinom{z}{n}\*p^{n}\*(1-p^{z-n}) $ a to 
-môžeme zapísať ako $ X \sim Bin(z,\frac{a}{a-1}) $.%Peto screen 46 koniec
+$$ x_{1} \sum\limits_{n=0}^z \dbinom{z}{n} A^{n}= 1 \text{.}$$
+\noindent Podľa binomickej vety, $ \sum\limits_{n=0}^z \dbinom{z}{n} A^{n}= (1+A)^{z} $, potom $ x_{1} = (1+A)^{-z} $.
+Keďže každé kladné číslo môžeme zapísať ako $ A = \frac{p}{1-p} $, kde $ p \in (0,1) $ dostávame: 
+$$ x_{1} = (1 + \frac{p}{1-p})^{-z} = (1-p^{z}) \Rightarrow x_{n+1} = \dbinom{z}{n}\*p^{n}\*(1-p^{z-n}) $$ a to 
+môžeme zapísať ako: $$ X \sim Bin(z,\frac{a}{a-1}) \text{.}$$%Peto screen 46 koniec
 \newpage %Kecy z doc
 \section{Využitie rozdelení pravdepodobností v poisťovníctve a teórii rizika} %Doc file stuff !!! -.-
 Výskyt poistných plnení je náhodný proces a teda nie je možné poznať ako sa bude vyvíjať. Pre poisťovňu je dôležité tento proces aspoň predpovedať, pretože na základe toho musí stanoviť výšku poistného pre jednotlivé zmluvy a takisto výšku rezerv. 
 Súhrn strát ktoré poisťovňa utrpí môžeme vyjadriť vzorcom:
-$$ S(t) = \sum\limits_{j=1}^N(t) X_{j},\; (prevsetky)t\geq0 $$\\
+$$ S(t) = \sum\limits_{j=1}^N(t) X_{j},\; \forall t\geq0 $$\\
 \textit{S(t)} – súhrn strát \\
 \textit{X(j)} – náhodná premenná predstavujúca výskyt poistnej udalosti, náhodné premenné X(j) sú nezávislé, ale vieme o nich, že sú  z jedného rozdelenia pravdepodobnosti\\
 \textit{N(t)} – diskrétna náhodná premenná\\
@@ -310,7 +301,12 @@ $$ p_{N}(k) = \dbinom{k+m-1}{m-1}\*p^{m}\*(1-p)^{k}\text{,}\; \text{pre }k=0,1,2
 \section{Záver}
 Touto  prácou sme sa dopracovali k riešeniam rovnice, ktorá rekurentným spôsobom popisuje postupnosť čísel. Zdanlivo nenápadná rovnica však našla svoje riešenia v teórii pravdepodobnosti, a to len vhodným dosadzovaním jednotlivých konštánt. Ukázalo sa, že jednotlivé rozdelenia pravdepodobnosti v nej obsiahnuté nachádzajú svoje uplatnenie v štatistike, a tým aj v teórii rizika a poisťovníctve.
 
+\begin{quote}
+\textit{Jednou z pozoruhodných vecí na javoch nášho sveta je, s akou neobyčajnou presnosťou mu vládnu matematické zákony.}
 
+\hfill R. Penrose 
+
+\end{quote}
 
 \begin{thebibliography}{9}
 \bibitem{pra}{\em Prágerová, A.:}
