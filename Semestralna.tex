@@ -65,15 +65,14 @@ Kapusta Peter
 
 
 \newpage
-\section{Zadanie}
+\section{Úvod}
 
-V závislosti od hodnôt $ a \text{ a } b $
-analyzujte riešenia danej diferenčnej rovnice\linebreak[4]
-$x_{n+1}=\left(a+{\frac{b}{n}}\right)\,x_{n}$
-kde $ a \text{ a } b $ sú reálne čísla, také, že $ a + b > 0$. Výsledky ilustrujte na jednoduchých príkladoch. 
-
-Budeme skúmať dopady zmeny jednotlivých premenných $a$ a $b$ na riešenia danej diferenčnej rovnice.
-
+Táto práca analyzuje riešenia diferenčnej rovnice 
+\begin{equation}
+x_{n+1}=\left(a+{\frac{b}{n}}\right)\,x_{n}
+\end{equation}
+v závislosti od hodnôt $ a $ a $ b $, kde $ a \text{ a } b $ sú reálne čísla, také, že $ a + b > 0$.
+%doplnit
 \section{Definície}
 \subsection{Pojem diferencia}
 
@@ -84,7 +83,6 @@ je číslo $f(x_{0} + h) - f(x_{0})$. Značíme
 $$\Delta f(x_{0}) = f(x_{0} + h) - f(x_{0})$$
 \end{defin}
 \subsection{Pojem diferenčná rovnica}
-\subsubsection{Typy diferenčných rovníc}
 \begin{defin}
 (Diferenčné rovnice 1. typu) 
 Nech pre všetky $x \in M$ je
@@ -196,17 +194,14 @@ $ x_{n} = a\*x_{n-1} $, kde $ a $ je koeficientom geometrickej postupnosti. V pr
 
 
 Ďalej skúmajme prípad, kedy je $ a=0 $. Prvých pár členov vyzerá následovne: 
-\begin{spacing}{1.6}
-\begin{tabbing}
-\hspace{1cm}\=\kill
-$ x_{2}$\>$=b\*x_{1}    $\\
-$ x_{3}$\>$=\frac{b}{2}\*x_{2} = \frac{b}{2}\*b\*x_{1}=\frac{b^{2}}{2}\*x_{1}   $\\
-$ x_{4}$\>$=\frac{b}{3}\*x_{3} = \frac{b^{3}}{3!}\*x_{1}  $\\
-\vdots \\
-$ x_{n}$\>$=\frac{b^{n-1}}{(n-1)!}\*x_{1}    $\\
-$ x_{n+1}$\>$=\frac{b^{n}}{(n)!}\*x_{1}    $\\
-\end{tabbing} 
-\end{spacing}
+\begin{align*}
+x_{2}&=b\*x_{1}\\
+x_{3}&=\frac{b}{2}\*x_{2} = \frac{b}{2}\*b\*x_{1}=\frac{b^{2}}{2}\*x_{1} \\
+x_{4}&=\frac{b}{3}\*x_{3} = \frac{b^{3}}{3!}\*x_{1}  \\
+&\vdots \\
+x_{n}&=\frac{b^{n-1}}{(n-1)!}\*x_{1}    \\
+x_{n+1}&=\frac{b^{n}}{(n)!}\*x_{1}   \\
+\end{align*}
 Čo sa podobá na Poissonove rozdelenie pravdepodobnosti. \\
 Položme $ \sum\limits_{n=0}^\infty x_{n+1} = 1 $, potom $ 1=\sum\limits_{n=0}^\infty x_{n+1} = x_{1}\*\sum\limits_{n=0}^\infty \frac{b^{n}}{n!} = x_{1}\*e^{b}$ $ \Rightarrow $ $ x_{1} = e^{-b} $.
 Môžeme teda prehlásiť, že ak $x_{1}=e^{-b} $, potom riešením rovnice\\
@@ -218,29 +213,24 @@ Metódou matematickej indukcie sme teda dokázali, že $x_{n}\sim Po(\lambda)$, 
 %247%
 
 Ďalej skúmajme prípad, kedy $ a \in (0;1) $. Z pôvodnej rovnice teda :
-\begin{spacing}{1.6}
-\begin{tabbing}
-\hspace{0.7cm}\=\kill 
-$ x_{2}$ \> $=(a+b)\*x_{1} $\\
-$ x_{3}$ \> $=(a + \frac{b}{2}) \* (a + b)\*x_{1} ) $\\
-$ x_{4}$ \> $=(a + \frac{b}{3})\*x_{3}= (a + \frac{b}{3})\*(a + \frac{b}{2})\*(a + b)\*x_{1} $\\
-\vdots \\
-$ x_{n}$ \> $=(a + \frac{b}{n-1})\*(a + \frac{b}{n-2}) \ldots (a + \frac{b}{2})\*(a + b)\*x_{1}$\\
-$ x_{n+1}$ \> $=(a + \frac{b}{n})\*(a + \frac{b}{n-1}) \ldots (a + \frac{b}{2})\*(a + b)\*x_{1}$\\
-$ x_{n+1}$ \> $=\frac{a^{n}}{n!}\*(n + \frac{b}{a})\*(n-1 + \frac{b}{a}) \ldots (2 + \frac{b}{a})\*(1 + \frac{b}{a})\*x_{1}$,
-\end{tabbing} 
-\end{spacing}kde $ x_{1} $ je prvým členom postupnosti. \\
-Vychádzajúc z $ a + b > 0 $ nech $ 1 + \frac{b}{a} = \alpha > 0$\\
-$ x_{n+1} = \frac{a^{n}}{n!}\*(n+\alpha-1)\*(n+\alpha-2) \ldots (1+\alpha)\*\alpha\*x_{1}$\\\newpage
-Po rozšírení pravej strany jednotkou v tvare $ \frac{(\alpha-1)!}{(\alpha-1)!} $ dostávame : \\
-\begin{spacing}{2.2}
-\begin{tabbing}
-\hspace{0.7cm}\=\kill 
-$ x_{n+1} = \frac{a^{n}\*(n+\alpha-1)!}{n!\*(\alpha-1)!}\*x_{1} $\\
-$ x_{n+1} = a^{n}\* \dbinom{n+\alpha-1}{n}\*x_{1} $\\	%Pr alebo Po Kenny dobre ?%
-$ x_{n+1} = \dbinom{n+\alpha-1}{n}\*(1-a)!^{\alpha}\*a^{n} = Pr(X = n) $,
-\end{tabbing} 
-\end{spacing}
+\begin{align*}
+x_{2}&=(a+b)\*x_{1} \\
+x_{3}&=(a + \frac{b}{2}) \* (a + b)\*x_{1} \\
+x_{4}&=(a + \frac{b}{3})\*x_{3}= (a + \frac{b}{3})\*(a + \frac{b}{2})\*(a + b)\*x_{1} \\
+&\vdots \\
+x_{n}&=(a + \frac{b}{n-1})\*(a + \frac{b}{n-2}) \ldots (a + \frac{b}{2})\*(a + b)\*x_{1}\\
+x_{n+1}&=(a + \frac{b}{n})\*(a + \frac{b}{n-1}) \ldots (a + \frac{b}{2})\*(a + b)\*x_{1}\\
+&=\frac{a^{n}}{n!}\*(n + \frac{b}{a})\*(n-1 + \frac{b}{a}) \ldots (2 + \frac{b}{a})\*(1 + \frac{b}{a})\*x_{1},
+\end{align*}
+\noindent kde $ x_{1} $ je prvým členom postupnosti. \newpage
+\noindent Vychádzajúc z $ a + b > 0 $ nech $ 1 + \frac{b}{a} = \alpha > 0$\\
+$$ x_{n+1} = \frac{a^{n}}{n!}\*(n+\alpha-1)\*(n+\alpha-2) \ldots (1+\alpha)\*\alpha\*x_{1}$$\\
+Po rozšírení pravej strany jednotkou v tvare $ \frac{(\alpha-1)!}{(\alpha-1)!} $ dostávame : 
+\begin{align*}
+x_{n+1} &= \frac{a^{n}\*(n+\alpha-1)!}{n!\*(\alpha-1)!}\*x_{1} \\
+x_{n+1} &= a^{n}\* \dbinom{n+\alpha-1}{n}\*x_{1} \\	%Pr alebo Po Kenny dobre ?%
+x_{n+1} &= \dbinom{n+\alpha-1}{n}\*(1-a)!^{\alpha}\*a^{n} = Pr(X = n) ,
+\end{align*}
 \noindent kde $ x_{1} = (1-a)^{\alpha} \Rightarrow x_{1} = (1-a)^{1+\frac{b}{a}}$ 
 %Koniec 247%%Teraz 248%
 Môžeme teda povedať, že $ x_{n+1} \sim NB(2,9) $, číže $ x_{n+1}\sim NB (1+\frac{b}{a}; a) $,čo je negatívne binomické rozdelenie, pričom
@@ -268,19 +258,17 @@ platí, že pre všetky $ n\geq z+1  $ $ x_{n+1} = 0 $.
 Kedže $ \frac{b}{n} \rightarrow 0$ a $ b>0 $, $a + \frac{b}{n} \leq 0$ pre všetky dostatočne veľké $ n $. Ak $ z $ neexistuje,
 potom zvolenie $ n $ je minimum tak $ a+\frac{b}{n} <0$, dostaneme $ x_{n+1} <0 $, čo je rozpor.
 Môžeme teda písať $ z = -(1+\frac{b}{a}) $, potom :
-\begin{spacing}{1.6}
-\begin{tabbing}
-\hspace{1.5cm}\=\kill 
-$ n=1 $ \> $x_{2}=(a+b)\*x_{1} $\\
-$ n=2 $ \> $x_{3}=(a + \frac{b}{2}) \* (a + b)\*x_{1} ) $\\
- \> \vdots \\
-$ n = m $ \> $ x_{m+1} = (a + \frac{b}{m})\*(a + \frac{b}{m-1})\ldots (a + \frac{b}{2})\*(a+b)\*x_{1}$\\
-\> $= \frac{a^{m}}{m!}\*(m + \frac{b}{a})\*(m-1+\frac{b}{a}) \ldots (2+\frac{b}{a})\*(1+\frac{b}{a})\*x_{1}) $\\
-\> $= \frac{a^{m}}{m!}\*(-z+m-1)\*(-z+m-2) \ldots (-z+1)\*(-z)\*x_{1}) $\\
-\> $= (-1)^{m}\*\frac{a^{m}}{m!}\*(m-1-z)\*(m-2-z)\ldots(1-z)\*z*x_{1} $\\
-\> $= \dbinom{z}{m}\*(-a)^{m}\*x_{1}  $\\
-\end{tabbing} 
-\end{spacing}
+\begin{align*}
+x_{2}&=(a+b)\*x_{1} \\
+x_{3}&=(a + \frac{b}{2}) \* (a + b)\*x_{1}\\
+&\vdots \\
+x_{n} &= (a+\frac{b}{n-1})\*(a+\frac{b}{n-2})\ldots  (a + \frac{b}{2})\*(a+b)\*x_{1}\\
+x_{n+1} &= (a + \frac{b}{n})\*(a + \frac{b}{n-1})\ldots (a + \frac{b}{2})\*(a+b)\*x_{1}\\
+&= \frac{a^{n}}{n!}\*(n + \frac{b}{a})\*(n-1+\frac{b}{a}) \ldots (2+\frac{b}{a})\*(1+\frac{b}{a})\*x_{1} \\
+&= \frac{a^{n}}{n!}\*(-z+n-1)\*(-z+n-2) \ldots (-z+1)\*(-z)\*x_{1} \\
+&= (-1)^{n}\*\frac{a^{n}}{n!}\*(n-1-z)\*(n-2-z)\ldots(1-z)\*z*x_{1} \\
+&= \dbinom{z}{n}\*(-a)^{n}\*x_{1}  \\
+\end{align*}
 \noindent Nech je $ A = -a >0 $. Ak $ \sum\limits_{n=0}^\infty x_{n+1} = 1 $ a $ x_{n+1} = 0 $ pre $ n\geq z+1 $ potom 
 $$ x_{1} \sum\limits_{n=0}^z \dbinom{z}{n} A^{n}= 1 $$\newpage
 \noindent Podľa binomickej formuly $ \sum\limits_{n=0}^z \dbinom{z}{n} A^{n}= (1+A)^{z} $, potom $ x_{1} = (1+A)^{-z} $.
@@ -307,7 +295,7 @@ Toto rozdelenie používame na aproximáciu málo pravdepodobných náhodných u
 
 Náhodná premenná $ N $ má Poissonovo rozdelenie s parametrom $ \lambda $, práve vtedy, ak pravdepodobnostná funkcia má tvar:
 $$ p_{N}(k)=\frac{\lambda^{k}}{k!}\*e^{-\lambda},\; \text{pre }k =0,1,2,\ldots .$$
-\subsection{Geometrické rozdelenie $ Ge(p) $}
+\newpage\subsection{Geometrické rozdelenie $ Ge(p) $}
 Pri tomto rozdelení nezávisle opakujeme pokus, pričom pravdepodobnosť, že náhodná udalosť nastane, je $ p $. Pokus budeme opakovať toľkokrát, kým prvýkrát nastane daná udalosť. Náhodná premenná $ N $ teda bude predstavovať počet opakovaní, kým nastala pozorovaná udalosť.
 Náhodná premenná $ N $ má geometrické rozdelenie s parametrom $ p $ práve vtedy, ak pravdepodobnostná funkcia má tvar:
 $$ p_{N}(k)=p\*(1-p)^{k}\text{,}\;\text{pre }k=0,1,2,\ldots .$$
@@ -320,6 +308,8 @@ $$ p_{N}(k) = \dbinom{k+m-1}{m-1}\*p^{m}\*(1-p)^{k}\text{,}\; \text{pre }k=0,1,2
 %Koniec prepisu z doc
 \newpage
 \section{Záver}
+Touto  prácou sme sa dopracovali k riešeniam rovnice, ktorá rekurentným spôsobom popisuje postupnosť čísel. Zdanlivo nenápadná rovnica však našla svoje riešenia v teórii pravdepodobnosti, a to len vhodným dosadzovaním jednotlivých konštánt. Ukázalo sa, že jednotlivé rozdelenia pravdepodobnosti v nej obsiahnuté nachádzajú svoje uplatnenie v štatistike, a tým aj v teórii rizika a poisťovníctve.
+
 
 
 \begin{thebibliography}{9}
