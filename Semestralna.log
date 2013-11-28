@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.11.12)  28 NOV 2013 12:43
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.11.12)  28 NOV 2013 16:38
 entering extended mode
 **Semestralna.tex
 (D:\Dokumenty\5_semester\Matalyza3\0_sem\Semestralna.tex
@@ -378,18 +378,18 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \c@thm=\count102
 
 (D:\Dokumenty\5_semester\Matalyza3\0_sem\Semestralna.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -407,7 +407,7 @@ LaTeX Font Info:    ... okay on input line 17.
 ) <./FRI_RGB_SK.png, id=1, 48.18pt x 48.18pt>
 File: ./FRI_RGB_SK.png Graphic file (type png)
  <use ./FRI_RGB_SK.png>
-Package pdftex.def Info: ./FRI_RGB_SK.png used on input line 22.
+Package pdftex.def Info: ./FRI_RGB_SK.png used on input line 23.
 (pdftex.def)             Requested size: 96.35971pt x 96.35971pt.
  [1
 
@@ -416,19 +416,19 @@ atalyza3/0_sem/FRI_RGB_SK.png>]
 (D:\Dokumenty\5_semester\Matalyza3\0_sem\Semestralna.toc)
 \tf@toc=\write3
  [1] [2]
-Underfull \hbox (badness 2941) in paragraph at lines 130--134
+Underfull \hbox (badness 2941) in paragraph at lines 131--135
 \OT1/cmr/m/n/10 kde $\OML/cmm/m/it/10 G$ \OT1/cmr/m/n/10 je fun-kcia, ktoru sm
 e do-stali riesenm p^ovodnej rov-nice.
  []
 
 
-Overfull \hbox (13.20691pt too wide) in paragraph at lines 134--136
+Overfull \hbox (13.20691pt too wide) in paragraph at lines 135--137
 []\OT1/cmr/m/n/10 Pozrime sa na riesenie, ked[] mame vo-pred dane (l[]ubovol
 []ne) csla $\OML/cmm/m/it/10 a[]; a[]; [] ; a[]$\OT1/cmr/m/n/10 .
  []
 
 
-Overfull \hbox (2.69725pt too wide) in paragraph at lines 142--145
+Overfull \hbox (2.69725pt too wide) in paragraph at lines 143--146
 \OT1/cmr/m/n/10 nice $\OML/cmm/m/it/10 k$\OT1/cmr/m/n/10 -teho radu $\OML/cmm/
 m/it/10 a[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 G\OT1/cmr/m/n/10 (\OML/cmm/m/it/
 10 n; a[]; a[]; [] ; a[]\OT1/cmr/m/n/10 )$ ma ob-sa-ho-vat[] $\OML/cmm/m/it/10
@@ -436,50 +436,50 @@ m/it/10 a[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 G\OT1/cmr/m/n/10 (\OML/cmm/m/it/
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 148--151
+Underfull \hbox (badness 10000) in paragraph at lines 149--152
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 199--208
+Underfull \hbox (badness 10000) in paragraph at lines 198--207
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 218--219
+Underfull \hbox (badness 10000) in paragraph at lines 217--218
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 225--246
+Underfull \hbox (badness 10000) in paragraph at lines 224--245
 
  []
 
 [6] [7]
-Overfull \hbox (46.20357pt too wide) in paragraph at lines 270--270
+Overfull \hbox (46.20357pt too wide) in paragraph at lines 269--269
 []\OT1/cmr/bx/n/14.4 Vyuzitie roz-de-len prav-de-po-dob-nost v po-ist[]ovn
 ctve
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 273--277
+Underfull \hbox (badness 10000) in paragraph at lines 272--276
 
  []
 
 [8] [9]
-Overfull \hbox (9.64069pt too wide) in paragraph at lines 302--303
+Overfull \hbox (9.64069pt too wide) in paragraph at lines 301--302
 \OT1/cmr/m/n/10 Touto pracou sme sa do-pra-co-vali k rieseniam rov-nice, ktor
 a re-ku-rentnym sp^osobom
  []
 
 
-Overfull \hbox (5.50195pt too wide) in paragraph at lines 302--303
+Overfull \hbox (5.50195pt too wide) in paragraph at lines 301--302
 \OT1/cmr/m/n/10 v teorii prav-de-po-dob-nosti, a to len vhodnym do-sa-dzo-van
 m jed-not-livych konstant.
  []
 
 
-Overfull \hbox (9.94627pt too wide) in paragraph at lines 302--303
+Overfull \hbox (9.94627pt too wide) in paragraph at lines 301--302
 \OT1/cmr/m/n/10 Ukazalo sa, ze jed-not-live roz-de-le-nia prav-de-po-dob-nos
 ti v nej ob-sia-hnute nachadzaju
  []
@@ -488,7 +488,7 @@ ti v nej ob-sia-hnute nachadzaju
 Here is how much of TeX's memory you used:
  2548 strings out of 493921
  31075 string characters out of 3147278
- 98854 words of memory out of 3000000
+ 97854 words of memory out of 3000000
  5822 multiletter control sequences out of 15000+200000
  11285 words of font info for 40 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -509,7 +509,7 @@ type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmti12.pfb>
-Output written on Semestralna.pdf (11 pages, 245195 bytes).
+Output written on Semestralna.pdf (11 pages, 245169 bytes).
 PDF statistics:
  105 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

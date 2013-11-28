@@ -6,11 +6,10 @@
 \contentsline {paragraph}{}{2}
 \contentsline {paragraph}{}{2}
 \contentsline {subsubsection}{\numberline {2.2.1}Rekurentn\IeC {\'a} formula}{3}
-\contentsline {paragraph}{}{3}
 \contentsline {section}{\numberline {3}Vypracovanie}{4}
 \contentsline {subsection}{\numberline {3.1}Trivi\IeC {\'a}lne rie\IeC {\v s}enie}{4}
 \contentsline {subsection}{\numberline {3.2}V\IeC {\v s}eobecn\IeC {\'e} rie\IeC {\v s}enie}{4}
-\contentsline {subsection}{\numberline {3.3}Z\IeC {\'a}vislos\IeC {\v t} od hodn\IeC {\^o}t a, b}{4}
+\contentsline {subsection}{\numberline {3.3}Z\IeC {\'a}vislos\IeC {\v t} od hodn\IeC {\^o}t a, b}{5}
 \contentsline {section}{\numberline {4}Vyu\IeC {\v z}itie rozdelen\IeC {\'\i } pravdepodobnost\IeC {\'\i } v pois\IeC {\v t}ovn\IeC {\'\i }ctve a te\IeC {\'o}rii rizika}{8}
 \contentsline {subsection}{\numberline {4.1}Binomick\IeC {\'e} rozdelenie $ Bi(n,p) $}{8}
 \contentsline {subsection}{\numberline {4.2}Poissonovo rozdelenie $ Po(\lambda ) $}{8}

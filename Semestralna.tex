@@ -6,6 +6,7 @@
 \usepackage{amsthm}
 \usepackage{setspace}
 \usepackage{graphicx}
+
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 
 \theoremstyle{plain}
@@ -119,8 +120,8 @@ $x + 1, x + 2, \ldots, x + k$.
 \subsubsection{Rekurentná formula}
 Rekurentnú formulu vieme získať z diferenčnej rovnice vyjadrením $(n+k)$-tého člena pomocou $k$ predchádzajúcich členov rovnice.
 
-\paragraph{}
-Majme danú diferenčnú rovnicu: $$g(x, y_{x}, y_{x+1}, \ldots, y_{x+k}) = 0\text{.}$$
+
+\indent Majme danú diferenčnú rovnicu: $$g(x, y_{x}, y_{x+1}, \ldots, y_{x+k}) = 0\text{.}$$
 
 \begin{enumerate}
 	\item Nech definičný obor tejto rovnice sú prirodzené čísla $ n = 1, 2, 3, \ldots$ a
@@ -180,15 +181,13 @@ x_{n-(k-1)}&=f(n-k)\*x_{n-k}\text{,}
 
 \noindent a teda $ x_{2} = f(1)\*x_{1} $. 
 %Kde počiatočná hodnota $x_{n}$ v bode $n=1$ je prvý člen postupnosti, teda zvolená konštanta.%
-
+\newpage
 \subsection{Závislosť od hodnôt a, b}
 
 Predpokladajme, že $ b=0 $ a $ a > 0 $, teda rovnica $ (1) $ má tvar $ x_{n+1} = a\,x_{n} $, čiže sa jedná o \textbf{geometrickú postupnosť}
 $ x_{n} = a\*x_{n-1} $, kde $ a $ je koeficientom geometrickej postupnosti. V prípade, že $ a = 1 $ dostávame $ x_{n} = x_{n-1} $.
 %Vraj nejake grafy%
-
-
-Ďalej skúmajme prípad, kedy je $ a=0 $. Prvých pár členov vyzerá následovne: 
+\\Ďalej skúmajme prípad, kedy je $ a=0 $. Prvých pár členov vyzerá následovne: 
 \begin{align*}
 x_{2}&=b\*x_{1}\\
 x_{3}&=\frac{b}{2}\*x_{2} = \frac{b}{2}\*b\*x_{1}=\frac{b^{2}}{2}\*x_{1} \\
@@ -259,7 +258,7 @@ x_{n+1} &= (a + \frac{b}{n})\*(a + \frac{b}{n-1})\ldots (a + \frac{b}{2})\*(a+b)
 &= \frac{a^{n}}{n!}\*(-z+n-1)\*(-z+n-2) \ldots (-z+1)\*(-z)\*x_{1} \\
 &= (-1)^{n}\*\frac{a^{n}}{n!}\*(n-1-z)\*(n-2-z)\ldots(1-z)\*z*x_{1} \\
 &= \dbinom{z}{n}\*(-a)^{n}\*x_{1}  \\
-\end{align*}
+\end{align*}\newpage
 \noindent Nech je $ A = -a >0 $. Ak $ \sum\limits_{n=0}^\infty x_{n+1} = 1 $ a $ x_{n+1} = 0 $ pre $ n\geq z+1 $ potom 
 $$ x_{1} \sum\limits_{n=0}^z \dbinom{z}{n} A^{n}= 1 \text{.}$$
 \noindent Podľa binomickej vety, $ \sum\limits_{n=0}^z \dbinom{z}{n} A^{n}= (1+A)^{z} $, potom $ x_{1} = (1+A)^{-z} $.
