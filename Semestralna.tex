@@ -127,16 +127,16 @@ Majme danú diferenčnú rovnicu: $$g(x, y_{x}, y_{x+1}, \ldots, y_{x+k}) = 0\te
 \begin{enumerate}
 	\item Nech definičný obor tejto rovnice sú prirodzené čísla $ n = 1, 2, 3, \ldots$ a
 		ďalej zaveďme všeobecnejšie označenie pre členy postupnosti: $ y_{n} =  a_{n}$,
-		takže rovnicu vieme prepísať ako  $$g(n, a_{n}, a_{n+1}, \ldots, a_{n+k}) = 0\text{.}$$
+		takže rovnicu vieme prepísať do tvaru  $$g(n, a_{n}, a_{n+1}, \ldots, a_{n+k}) = 0\text{.}$$
 		Predpokladajme, že túto rovnicu vieme jednoznačne rozriešiť vzhľadom k $ a_{n+k}$ :
 		$$a_{n+k} = G(n, a_{n}, a_{n+1}, \ldots, a_{n+k-1})\text{,}$$
 		kde $G$ je funkcia, ktorú sme dostali riešením pôvodnej rovnice.\linebreak[4]
-		 Dostali sme vlastne všeobecný rekurentný vzorec pre postupnosť $a_{n}$,\linebreak[4] v ktorom je $(n+k)$-ty 				člen vyjadrený pomocou $k$ predchádzajúcich členov 
+		Týmto sme dostali všeobecný rekurentný vzorec pre postupnosť $a_{n}$,\linebreak[4] v ktorom je $(n+k)$-ty 				člen vyjadrený pomocou $k$ predchádzajúcich členov 
 		$a_{n}, a_{n+1}, \ldots, a_{n+k-1}$ a premennej $n$.
 	\item Pozrime sa na riešenie, keď máme vopred dané (ľubovoľné) čísla $ a_{1}, a_{2}, \ldots, a_{k}$.
 		Vieme, že po dosadení členov do funkcie $G$ vypočítame jednoznačne člen
-		$$a_{k+1} = G(1, a_{1}, a_{2}, \ldots, a_{k};)\text{,}$$ ďalším dosadením vypočítame
-		$$a_{k+2} = G(2, a_{2}, a_{3}, \ldots, a_{k+1};)\text{atď.}$$
+		$$a_{k+1} = G(1, a_{1}, a_{2}, \ldots, a_{k})\text{,}$$ ďalším dosadením vypočítame
+		$$a_{k+2} = G(2, a_{2}, a_{3}, \ldots, a_{k+1})\text{atď.}$$
 		Všeobecný $n$-tý člen $ a_{n} $ dostaneme vypočítaním elementárnej funkcie
 		$n$ a daných $k$ prvých čísiel $ a_{1}, a_{2}, \ldots, a_{k}$. Táto funkcia je práve partikulárnym riešením 				diferenčnej rovnice s počiatočnými podmienkami $ a_{1}, a_{2}, \ldots, a_{k}$.	
 \end{enumerate}
@@ -147,7 +147,7 @@ $k$ všeobecných konštánt, ktoré je možno si ľubovoľne zvoliť.
 
 \newpage
 \section{Vypracovanie}
-\textbf{Popis našej rovnice}\newline
+\textbf{Popis problému}\newline
 $x_{n+1}=\left(a+{\frac{b}{n}}\right)\,x_{n}$, kde $a,b \in R,\, a+b >0$. Ide o rekurentný vzorec pre postupnosť.\newline\newline
 \textbf{Vypísanie prvých členov postupnosti}
 \begin{spacing}{1.4}
@@ -165,7 +165,7 @@ $x_{n+1}=\left(a+{\frac{b}{n}}\right)\,x_{n}$, kde $a,b \in R,\, a+b >0$. Ide o 
 
 \subsection{Triviálne riešenie}
 Nech $x_{1}=0$.\newline
- Potom dostávame triviálne riešenie $x_{n+1} = 0$ a teda každý člen postupnosti bude mať hodnotu $0$. Ďalej, v našom vypracovaní, budeme predpokladať, že $ x_{1} > 0 $ a teda sa budeme 
+ Potom dostávame triviálne riešenie $x_{n+1} = 0$, číže každý člen postupnosti bude mať hodnotu $0$. Ďalej budeme predpokladať, že $ x_{1} > 0 $ a teda sa budeme 
 zaoberať závislosťou od hodnôt $ a,b $.
 
 \subsection{Všeobecné riešenie}
@@ -181,20 +181,19 @@ $ x_{n-2}$\>$=f(n-3)\*x_{n-3}    $\\
 $ x_{n-(k-1)}$\>$=f(n-k)\*x_{n-k}    $
 \end{tabbing} 
 \end{spacing}
-\noindent a teda $ x_{2} = f_{1}\*x_{1} $. 
+\noindent, a teda $ x_{2} = f(1)\*x_{1} $. 
 %Kde počiatočná hodnota $x_{n}$ v bode $n=1$ je prvý člen postupnosti, teda zvolená konštanta.%
 
 \subsection{Závislosť od hodnôt a, b}
 Nech $ b=0 $,  $x_{1}>0$.\newline
 Potom rovnica $x_{n+1}=\left(a+{\frac{b}{n}}\right)\*x_{n}$  nadobudne tvar  $x_{n+1}= a\*x_{n}$, 
 teda každý ďalší člen postupnosti $x_{n+1}$ je $a$-násobkom predchádzajúceho člena  $x_{n}$.
-Dosadením  $b=0$ teda vzniká z našej rovnice Geometrická postupnosť.
+Dosadením  $b=0$ teda vzniká z našej rovnice \textbf{geometrická postupnosť}.
 \newpage
 Predpokladajme, že $ b=0 $ a $ a > 0 $, teda rovnica (*) má tvar $ x_{n+1} = a\*x_{n} $, čiže sa jedná o geometrickú postupnosť
-$ x_{n} = a\*x_{n-1} $, kde $ a $ je koeficientom geometrickej postupnosti. 
-
-V prípade, že $ a = 1 $ dostávame $ x_{n} = x_{n-1} $.
+$ x_{n} = a\*x_{n-1} $, kde $ a $ je koeficientom geometrickej postupnosti. V prípade, že $ a = 1 $ dostávame $ x_{n} = x_{n-1} $.
 %Vraj nejake grafy%
+
 
 Ďalej skúmajme prípad, kedy je $ a=0 $. Prvých pár členov vyzerá následovne: 
 \begin{spacing}{1.6}
@@ -209,12 +208,11 @@ $ x_{n+1}$\>$=\frac{b^{n}}{(n)!}\*x_{1}    $\\
 \end{tabbing} 
 \end{spacing}
 Čo sa podobá na Poissonove rozdelenie pravdepodobnosti. \\
-Položme $ \sum\limits_{n=0}^\infty x_{n+1} = 1 $, potom $ 1=\sum\limits_{n=0}^\infty x_{n+1} = x_{1}\*\sum\limits_{n=0}^\infty \frac{b^{n}}{n!} = x_{1}\*e^{b}$ $ \Rightarrow $ $ x_{1} = e^{-b} $
-
-Môžeme teda prehlásiť, že ak $x_{1}=e^{-b} $, potom riešením rovnice
+Položme $ \sum\limits_{n=0}^\infty x_{n+1} = 1 $, potom $ 1=\sum\limits_{n=0}^\infty x_{n+1} = x_{1}\*\sum\limits_{n=0}^\infty \frac{b^{n}}{n!} = x_{1}\*e^{b}$ $ \Rightarrow $ $ x_{1} = e^{-b} $.
+Môžeme teda prehlásiť, že ak $x_{1}=e^{-b} $, potom riešením rovnice\\
 $x_{n+1}=\left(a+{\frac{b}{n}}\right)\,x_{n}$ kde $a=0$, $b>0$
-je Poissonovo rozdelenie $Po(\lambda)$ s parametrom $\lambda=b$.\\
-Metódou matematickej indukcie sme teda dokázali, že $x_{n}\sim Po(\lambda)$, keďže každý ďalší člen $x_{n+1}\sim Po(\lambda)$.\\
+je \textbf{Poissonovo rozdelenie} $Po(\lambda)$ s parametrom $\lambda=b$.\\
+Metódou matematickej indukcie sme teda dokázali, že $x_{n}\sim Po(\lambda)$, keďže každý ďalší člen $x_{n+1}\sim Po(b)$.\\
 %Koniec 246%
 
 %247%
@@ -229,10 +227,10 @@ $ x_{4}$ \> $=(a + \frac{b}{3})\*x_{3}= (a + \frac{b}{3})\*(a + \frac{b}{2})\*(a
 \vdots \\
 $ x_{n}$ \> $=(a + \frac{b}{n-1})\*(a + \frac{b}{n-2}) \ldots (a + \frac{b}{2})\*(a + b)\*x_{1}$\\
 $ x_{n+1}$ \> $=(a + \frac{b}{n})\*(a + \frac{b}{n-1}) \ldots (a + \frac{b}{2})\*(a + b)\*x_{1}$\\
-$ x_{n+1}$ \> $=\frac{a^{n}}{n!}\*(n + \frac{b}{a})\*(n-1 + \frac{b}{a}) \ldots (2 + \frac{b}{a})\*(1 + \frac{b}{a})\*x_{1}$,\\
+$ x_{n+1}$ \> $=\frac{a^{n}}{n!}\*(n + \frac{b}{a})\*(n-1 + \frac{b}{a}) \ldots (2 + \frac{b}{a})\*(1 + \frac{b}{a})\*x_{1}$,
 \end{tabbing} 
-\end{spacing}
-kde $ x_{1} $ je prvým členom postupnosti. Vychádzajúc z $ a + b > 0 $ nech $ 1 + \frac{b}{a} = \alpha > 0$\\
+\end{spacing}kde $ x_{1} $ je prvým členom postupnosti. \\
+Vychádzajúc z $ a + b > 0 $ nech $ 1 + \frac{b}{a} = \alpha > 0$\\
 $ x_{n+1} = \frac{a^{n}}{n!}\*(n+\alpha-1)\*(n+\alpha-2) \ldots (1+\alpha)\*\alpha\*x_{1}$\\\newpage
 Po rozšírení pravej strany jednotkou v tvare $ \frac{(\alpha-1)!}{(\alpha-1)!} $ dostávame : \\
 \begin{spacing}{2.2}
@@ -240,10 +238,10 @@ Po rozšírení pravej strany jednotkou v tvare $ \frac{(\alpha-1)!}{(\alpha-1)!
 \hspace{0.7cm}\=\kill 
 $ x_{n+1} = \frac{a^{n}\*(n+\alpha-1)!}{n!\*(\alpha-1)!}\*x_{1} $\\
 $ x_{n+1} = a^{n}\* \dbinom{n+\alpha-1}{n}\*x_{1} $\\	%Pr alebo Po Kenny dobre ?%
-$ x_{n+1} = \dbinom{n+\alpha-1}{n}\*(1-a)!^{\alpha}\*a^{n} = Pr(x = n) $,
+$ x_{n+1} = \dbinom{n+\alpha-1}{n}\*(1-a)!^{\alpha}\*a^{n} = Pr(X = n) $,
 \end{tabbing} 
 \end{spacing}
-kde $ x_{1} = (1-a)^{\alpha} \Rightarrow x_{1} = (1-a)^{1+\frac{b}{a}}$ 
+\noindent kde $ x_{1} = (1-a)^{\alpha} \Rightarrow x_{1} = (1-a)^{1+\frac{b}{a}}$ 
 %Koniec 247%%Teraz 248%
 Môžeme teda povedať, že $ x_{n+1} \sim NB(2,9) $, číže $ x_{n+1}\sim NB (1+\frac{b}{a}; a) $,čo je negatívne binomické rozdelenie, pričom
 $ a \in (0;1), a+b>0 \Rightarrow b \in (0;\infty), x_{1}=(1-a)^{a+\frac{b}{a}}$. Matematickou dedukciou je teda dokázané, že to platí aj pre 
@@ -283,9 +281,9 @@ $ n = m $ \> $ x_{m+1} = (a + \frac{b}{m})\*(a + \frac{b}{m-1})\ldots (a + \frac
 \> $= \dbinom{z}{m}\*(-a)^{m}\*x_{1}  $\\
 \end{tabbing} 
 \end{spacing}
-Nech je $ A = -a >0 $. Ak $ \sum\limits_{n=0}^\infty x_{n+1} = 1 $ a $ x_{n+1} = 0 $ pre $ n\geq z+1 $ potom 
-	$$ x_{1} \sum\limits_{n=0}^z \dbinom{z}{n} A^{n}= 1 $$\newpage
-Podľa binomickej formuly $ \sum\limits_{n=0}^z \dbinom{z}{n} A^{n}= (1+A)^{z} $, potom $ x_{1} = (1+A)^{-z} $.
+\noindent Nech je $ A = -a >0 $. Ak $ \sum\limits_{n=0}^\infty x_{n+1} = 1 $ a $ x_{n+1} = 0 $ pre $ n\geq z+1 $ potom 
+$$ x_{1} \sum\limits_{n=0}^z \dbinom{z}{n} A^{n}= 1 $$\newpage
+\noindent Podľa binomickej formuly $ \sum\limits_{n=0}^z \dbinom{z}{n} A^{n}= (1+A)^{z} $, potom $ x_{1} = (1+A)^{-z} $.
 Vzhľadom k tomu môžeme každé kladné číslo zapísať ako $ A = \frac{p}{1-p} $,\\ kde $ p \in (0,1) $. Potom
 $ x_{1} = (1 + \frac{p}{1-p})^{-z} = (1-p^{z}) \Rightarrow x_{n+1} = \dbinom{z}{n}\*p^{n}\*(1-p^{z-n}) $ a to 
 môžeme zapísať ako $ X \sim Bin(z,\frac{a}{a-1}) $.%Peto screen 46 koniec
@@ -293,14 +291,14 @@ môžeme zapísať ako $ X \sim Bin(z,\frac{a}{a-1}) $.%Peto screen 46 koniec
 \section{Využitie rozdelení pravdepodobností v poisťovníctve a teórii rizika} %Doc file stuff !!! -.-
 Výskyt poistných plnení je náhodný proces a teda nie je možné poznať ako sa bude vyvíjať. Pre poisťovňu je dôležité tento proces aspoň predpovedať, pretože na základe toho musí stanoviť výšku poistného pre jednotlivé zmluvy a takisto výšku rezerv. 
 Súhrn strát ktoré poisťovňa utrpí môžeme vyjadriť vzorcom:
-$$ S(t) = \sum\limits_{j=1}^N(t) X_{j},\; (prevsetky)t\geq0 $$
-\textit{S(t)} – súhrn strát 
-\textit{X(j)} – náhodná premenná predstavujúca výskyt poistnej udalosti, náhodné premenné X(j) sú nezávislé, ale vieme o nich, že sú  z jedného rozdelenia pravdepodobnosti
-\textit{N(t)} – diskrétna náhodná premenná
+$$ S(t) = \sum\limits_{j=1}^N(t) X_{j},\; (prevsetky)t\geq0 $$\\
+\textit{S(t)} – súhrn strát \\
+\textit{X(j)} – náhodná premenná predstavujúca výskyt poistnej udalosti, náhodné premenné X(j) sú nezávislé, ale vieme o nich, že sú  z jedného rozdelenia pravdepodobnosti\\
+\textit{N(t)} – diskrétna náhodná premenná\\
 
 Pri predpovedaní výpočtu poistného je dôležité nájsť vhodné rozdelenie pre počet poistných plnení a takisto rozdelenie výšky poistných plnení. Jednotlivé poistné udalosti sú náhodné a je možné predpokladať aj ich nezávislosť pre konkrétne zmluvy. V prípade počtu plnení sú známe diskrétne rozdelenia, ktoré sú na ich popisovanie najvhodnejšie.
 \subsection{Binomické rozdelenie $ Bi(n,p) $}
-Opisuje počet výskytu určitej náhodnej udalosti v n nezávislých pokusoch, pričom daný jav má stále rovnakú pravdepodobnosť p.
+Opisuje počet výskytu určitej náhodnej udalosti v $ n $ nezávislých pokusoch, pričom daný jav má stále rovnakú pravdepodobnosť $ p $.
 
 Náhodná premenná $ N $ má binomické rozdelenie pravdepodobnosti s parametrami $ n; p $ práve vtedy, ak pravdepodobnosť, že pri $ n $ nezávislých pokusoch nastane pozorovaný jav práve $ k $ krát, má tvar: 
 $$ p_{N}(k)=\dbinom{n}{k}\*q^{k}\*(1-q)^{n-k} \text{, pre }k=1,2,\ldots,n\text{.} $$
@@ -312,11 +310,11 @@ $$ p_{N}(k)=\frac{\lambda^{k}}{k!}\*e^{-\lambda},\; \text{pre }k =0,1,2,\ldots .
 \subsection{Geometrické rozdelenie $ Ge(p) $}
 Pri tomto rozdelení nezávisle opakujeme pokus, pričom pravdepodobnosť, že náhodná udalosť nastane, je $ p $. Pokus budeme opakovať toľkokrát, kým prvýkrát nastane daná udalosť. Náhodná premenná $ N $ teda bude predstavovať počet opakovaní, kým nastala pozorovaná udalosť.
 Náhodná premenná $ N $ má geometrické rozdelenie s parametrom $ p $ práve vtedy, ak pravdepodobnostná funkcia má tvar:
-$$ p_{N}(k)=p*(1-p)^{k}\text{,}\;\text{pre }k=0,1,2,\ldots .$$
+$$ p_{N}(k)=p\*(1-p)^{k}\text{,}\;\text{pre }k=0,1,2,\ldots .$$
 \subsection{Negatívne binomické rozdelenie $ NBi(m,p) $}
 Toto rozdelenie vychádza z geometrického rozdelenia, teda znova nezávisle opakujeme
 pokusy, pričom tentokrát neskončíme vtedy, keď náhodná udalosť nastane prvýkrát, ale až vtedy, keď nastane $ m $-krát.
-Náhodná premenná $ N $ má negatívne binomické rozdelenie pravdepodobnosti s parametrami m a p práve vtedy, 
+Náhodná premenná $ N $ má negatívne binomické rozdelenie pravdepodobnosti s parametrami $ m $ a $ p $ práve vtedy, 
 ak jej pravdepodobnostná funkcia má tvar:
 $$ p_{N}(k) = \dbinom{k+m-1}{m-1}\*p^{m}\*(1-p)^{k}\text{,}\; \text{pre }k=0,1,2,\ldots \text{.}$$
 %Koniec prepisu z doc
