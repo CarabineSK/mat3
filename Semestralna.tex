@@ -140,7 +140,7 @@ Rekurentnú formulu vieme získať z diferenčnej rovnice vyjadrením $(n+k)$-t�
 		$n$ a daných $k$ prvých čísiel $ a_{1}, a_{2}, \ldots, a_{k}$. Táto funkcia je práve partikulárnym riešením 				diferenčnej rovnice s počiatočnými podmienkami $ a_{1}, a_{2}, \ldots, a_{k}$.	
 \end{enumerate}
 
-Touto druhou úvahou sa súčasne znovu potvrdzuje, že všeobecné riešenie rovnice $k$-teho rádu 
+Touto druhou úvahou sa súčasne znovu potvrdzuje, že všeobecné riešenie rovnice $k$-tého rádu 
 $a_{n+k} = G(n, a_{n}, a_{n+1}, \ldots, a_{n+k-1})$ má obsahovať
 $k$ všeobecných konštánt, ktoré je možno si ľubovoľne zvoliť.
 
@@ -164,7 +164,7 @@ Prvých pár členov postupnosti má tvar :
 
 \subsection{Triviálne riešenie}
 Nech $x_{1}=0$.\newline
- Potom dostávame triviálne riešenie $x_{n+1} = 0$, číže každý člen postupnosti bude mať hodnotu $0$. Ďalej budeme predpokladať, že $ x_{1} > 0 $, a teda sa budeme 
+ Potom dostávame triviálne riešenie $x_{n+1} = 0$ také, že každý člen postupnosti bude mať hodnotu $0$. Ďalej budeme predpokladať, že $ x_{1} > 0 $, a teda sa budeme 
 zaoberať závislosťou od hodnôt $ a,b $.
 
 \subsection{Všeobecné riešenie}
@@ -196,7 +196,7 @@ x_{4}&=\frac{b}{3}\*x_{3} = \frac{b^{3}}{3!}\*x_{1}  \\
 x_{n}&=\frac{b^{n-1}}{(n-1)!}\*x_{1}    \\
 x_{n+1}&=\frac{b^{n}}{(n)!}\*x_{1}   \\
 \end{align*}
-Čo sa podobá na Poissonove rozdelenie pravdepodobnosti. \\
+Čo sa podobá na Poissonovo rozdelenie pravdepodobnosti. \\
 Položme $ \sum\limits_{n=0}^\infty x_{n+1} = 1 $, potom $ 1=\sum\limits_{n=0}^\infty x_{n+1} = x_{1}\*\sum\limits_{n=0}^\infty \frac{b^{n}}{n!} = x_{1}\*e^{b}$ $ \Rightarrow $ $ x_{1} = e^{-b} $.
 Môžeme teda prehlásiť, že ak $x_{1}=e^{-b} $, potom riešením rovnice\\
 $(1)$ kde $a=0$, $b>0$
@@ -222,9 +222,9 @@ x_{n+1} &= \frac{a^{n}\*(n+\alpha-1)!}{n!\*(\alpha-1)!}\*x_{1} \\
 x_{n+1} &= a^{n}\* \dbinom{n+\alpha-1}{n}\*x_{1} \\	%Pr alebo Po Kenny dobre ?%
 x_{n+1} &= \dbinom{n+\alpha-1}{n}\*(1-a)!^{\alpha}\*a^{n} = Pr(X = n) ,
 \end{align*}
-\noindent kde $ x_{1} = (1-a)^{\alpha} \Rightarrow x_{1} = (1-a)^{1+\frac{b}{a}}$ 
+\noindent kde $ x_{1} = (1-a)^{\alpha} \Rightarrow x_{1} = (1-a)^{1+\frac{b}{a}}$.
 %Koniec 247%%Teraz 248%
-Môžeme teda povedať, že $ x_{n+1} \sim NB(2,9) $, číže $ x_{n+1}\sim NB (1+\frac{b}{a}; a) $,čo je \textbf{negatívne binomické rozdelenie}, pričom
+Môžeme teda povedať, že $ x_{n+1} \sim NB(2,9) $, čiže $ x_{n+1}\sim NB (1+\frac{b}{a}; a) $, čo je \textbf{negatívne binomické rozdelenie}, pričom
 $ a \in (0;1), a+b>0 \Rightarrow b \in (0;\infty), x_{1}=(1-a)^{a+\frac{b}{a}}$. Matematickou dedukciou je teda dokázané, že to platí aj pre 
 $ x_{n} $.\\
 %Koniec 248%%Zacina 244, ale to len prepisem, lebo neviem kam s tym%
@@ -246,7 +246,7 @@ $ x_{n} $.\\
 Následne je potrebné sa zaoberať prípadom, keď $ a<0 $. Nesmieme však zabudnúť na podmienku $ a+b=0 $.
 Predpokladajme, že existuje kladné celé číslo $ z $ také, že $ a + \frac{b}{z+1} = 0 $. V tomto prípade
 platí, že pre všetky $ n\geq z+1  $ $ x_{n+1} = 0 $.
-Kedže $ \frac{b}{n} \rightarrow 0$ a $ b>0 $, $a + \frac{b}{n} \leq 0$ pre všetky dostatočne veľké $ n $. Ak také $ z $ neexistuje, potom zvolením minimálneho $ n $, takého, že $ a + \frac{b}{n} < 0 $ dostávame $ x_{n+1}<0 $, čo je spor.
+Keďže $ \frac{b}{n} \rightarrow 0$ a $ b>0 $, $a + \frac{b}{n} \leq 0$ pre všetky dostatočne veľké $ n $. Ak také $ z $ neexistuje, potom zvolením minimálneho $ n $, takého, že $ a + \frac{b}{n} < 0 $ dostávame $ x_{n+1}<0 $, čo je spor.
 Môžeme teda písať $ z = -(1+\frac{b}{a}) $, potom :
 \begin{align*}
 x_{2}&=(a+b)\*x_{1} \\
@@ -266,7 +266,8 @@ Keďže každé kladné číslo môžeme zapísať ako $ A = \frac{p}{1-p} $, kd
 $$ x_{1} = (1 + \frac{p}{1-p})^{-z} = (1-p^{z}) \Rightarrow x_{n+1} = \dbinom{z}{n}\*p^{n}\*(1-p^{z-n}) $$ a to 
 môžeme zapísať ako: $$ X \sim Bin(z,\frac{a}{a-1}) \text{.}$$%Peto screen 46 koniec
 \newpage %Kecy z doc
-\section{Využitie rozdelení pravdepodobností v poisťovníctve a teórii rizika} %Doc file stuff !!! -.-
+\section{Využitie rozdelení pravdepodobností\\
+ v poisťovníctve a teórii rizika} %Doc file stuff !!! -.-
 Výskyt poistných plnení je náhodný proces a teda nie je možné poznať ako sa bude vyvíjať. Pre poisťovňu je dôležité tento proces aspoň predpovedať, pretože na základe toho musí stanoviť výšku poistného pre jednotlivé zmluvy a takisto výšku rezerv. 
 Súhrn strát ktoré poisťovňa utrpí môžeme vyjadriť vzorcom:
 $$ S(t) = \sum\limits_{j=1}^N(t) X_{j},\; \forall t\geq0 $$\\
@@ -298,7 +299,7 @@ $$ p_{N}(k) = \dbinom{k+m-1}{m-1}\*p^{m}\*(1-p)^{k}\text{,}\; \text{pre }k=0,1,2
 %Koniec prepisu z doc
 \newpage
 \section{Záver}
-Touto  prácou sme sa dopracovali k riešeniam rovnice, ktorá rekurentným spôsobom popisuje postupnosť čísel. Zdanlivo nenápadná rovnica však našla svoje riešenia v teórii pravdepodobnosti, a to len vhodným dosadzovaním jednotlivých konštánt. Ukázalo sa, že jednotlivé rozdelenia pravdepodobnosti v nej obsiahnuté nachádzajú svoje uplatnenie v štatistike, a tým aj v teórii rizika a poisťovníctve.
+\hfill{Touto  prácou sme sa dopracovali k riešeniam rovnice, ktorá rekurentným\\ spôsobom popisuje postupnosť čísel. Zdanlivo nenápadná rovnica však našla svoje riešenia v teórii pravdepodobnosti, a to len vhodným dosadzovaním jednotlivých konštánt. Ukázalo sa, že jednotlivé rozdelenia pravdepodobnosti v nej obsiahnuté nachádzajú svoje uplatnenie v štatistike, a tým aj v teórii rizika a poisťovníctve.}
 
 \begin{quote}
 \textit{Jednou z pozoruhodných vecí na javoch nášho sveta je, s akou neobyčajnou presnosťou mu vládnu matematické zákony.}
